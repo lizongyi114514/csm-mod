@@ -1,5 +1,6 @@
 package com.example.csm.entity;
 
+import com.example.csm.network.ForesightPacket;
 import com.example.csm.registry.CsmEffects;
 import com.example.csm.registry.CsmEntities;
 import net.minecraft.core.particles.ParticleTypes;
@@ -131,6 +132,7 @@ public class FutureDevilEntity extends Monster implements GeoEntity {
             if (this.level() instanceof ServerLevel server) {
                 server.sendParticles(ParticleTypes.END_ROD, getX(), getY() + 1.6D, getZ(), 12, 0.4D, 0.4D, 0.4D, 0.01D);
             }
+            predictAround(player);
         }
     }
 
@@ -158,5 +160,27 @@ public class FutureDevilEntity extends Monster implements GeoEntity {
         level.sendParticles(ParticleTypes.PORTAL, pos.x, pos.y + 1.0D, pos.z, 30, 0.6D, 0.8D, 0.6D, 0.05D);
         level.playSound(null, player.blockPosition(), SoundEvents.AMETHYST_BLOCK_RESONATE, SoundSource.PLAYERS, 1.0F, 1.2F);
         return devil;
+    }
+
+    /** 预测未来 3 秒：附近敌对生物的攻击力总和，并在它们「将要到达的位置」画残影。 */
+    private void predictAround(net.minecraft.world.entity.player.Player player) {
+        float damage = 0.0F;
+        int threats = 0;
+        for (Monster mob : this.level().getEntitiesOfClass(Monster.class, getBoundingBox().inflate(14.0D),
+                e -> e != this && e.isAlive())) {
+            var attribute = mob.getAttribute(Attributes.ATTACK_DAMAGE);
+            float power = attribute == null ? 2.0F : (float) attribute.getValue();
+            damage += power * 0.5F;
+            threats++;
+            if (this.level() instanceof ServerLevel server) {
+                Vec3 future = mob.position().add(mob.getDeltaMovement().scale(20.0D));
+                double fy = future.y + mob.getBbHeight() * 0.5D;
+                server.sendParticles(ParticleTypes.SOUL, future.x, fy, future.z, 10, 0.25D, 0.25D, 0.25D, 0.01D);
+                server.sendParticles(ParticleTypes.CRIT, future.x, fy, future.z, 6, 0.2D, 0.2D, 0.2D, 0.05D);
+            }
+        }
+        if (player instanceof ServerPlayer serverPlayer) {
+            ForesightPacket.send(serverPlayer, 60, damage, threats);
+        }
     }
 }

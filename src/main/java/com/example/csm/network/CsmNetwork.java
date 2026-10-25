@@ -52,6 +52,12 @@ public final class CsmNetwork {
                 .consumerMainThread(PlayAnimPacket::handle)
                 .add();
 
+        CHANNEL.messageBuilder(ForesightPacket.class, id++, NetworkDirection.PLAY_TO_CLIENT)
+                .encoder(ForesightPacket::encode)
+                .decoder(ForesightPacket::new)
+                .consumerMainThread(ForesightPacket::handle)
+                .add();
+
         Csm.LOGGER.debug("[CSM] 注册 {} 个网络包", id);
     }
 }

@@ -32,6 +32,7 @@ public final class ClientEvents {
             return;
         }
         ClientSkillState.tick();
+        ClientForesight.tick();
 
         Minecraft minecraft = Minecraft.getInstance();
         if (minecraft.player == null) {
