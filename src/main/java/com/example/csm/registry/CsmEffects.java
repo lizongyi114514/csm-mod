@@ -76,7 +76,7 @@ public final class CsmEffects {
 
         public CsmEffect modify(net.minecraft.world.entity.ai.attributes.Attribute attribute, String uuid,
                                 double amount, AttributeModifier.Operation operation) {
-            addAttributeModifier(attribute, UUID.fromString(uuid), amount, operation);
+            addAttributeModifier(attribute, uuid, amount, operation);
             return this;
         }
     }
@@ -94,9 +94,8 @@ public final class CsmEffects {
         }
 
         @Override
-        public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+        public void applyEffectTick(LivingEntity entity, int amplifier) {
             entity.hurt(entity.damageSources().magic(), 1.0F);
-            return true;
         }
     }
 }

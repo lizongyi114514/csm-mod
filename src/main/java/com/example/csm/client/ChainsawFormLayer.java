@@ -40,7 +40,7 @@ public class ChainsawFormLayer extends RenderLayer<AbstractClientPlayer, PlayerM
     private static final ModelPart LEFT_BLADE = LEFT_SAW.getChild("left_blade");
 
     public ChainsawFormLayer(PlayerRenderer renderer) {
-        super(RenderType.entityCutoutNoCull(TEXTURE), renderer);
+        super(renderer);
     }
 
     @Override
