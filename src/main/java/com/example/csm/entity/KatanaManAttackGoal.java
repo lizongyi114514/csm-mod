@@ -38,7 +38,7 @@ public class KatanaManAttackGoal extends Goal {
     public void start() {
         this.stage = 0;
         this.timer = 0;
-        this.boss.setAttacking(true);
+        this.boss.beginAttack();
         this.boss.getNavigation().stop();
         LivingEntity target = this.boss.getTarget();
         if (target != null) {
@@ -95,6 +95,12 @@ public class KatanaManAttackGoal extends Goal {
     }
 
     private void strike() {
+        if (this.boss.nextHeavy) {
+            this.boss.heavySlash();
+            this.stage = 2;
+            this.timer = 0;
+            return;
+        }
         switch (this.boss.phase()) {
             case 1 -> {
                 this.boss.slash();

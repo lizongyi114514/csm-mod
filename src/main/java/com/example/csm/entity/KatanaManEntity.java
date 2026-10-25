@@ -55,6 +55,9 @@ public class KatanaManEntity extends Monster implements GeoEntity {
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private int attackCooldown;
+    private int comboStep;
+    public boolean nextHeavy;
+    private String attackAnim = "attack1";
     private boolean frenzied;
 
     public KatanaManEntity(EntityType<? extends Monster> type, Level level) {
@@ -90,10 +93,10 @@ public class KatanaManEntity extends Monster implements GeoEntity {
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
         controllers.add(new AnimationController<>(this, "movement", 4, state ->
                 state.setAndContinue(state.isMoving()
-                        ? RawAnimation.begin().thenLoop("walk")
+                        ? RawAnimation.begin().thenLoop(isSprinting() ? "sprint" : "walk")
                         : RawAnimation.begin().thenLoop("idle"))));
         controllers.add(new AnimationController<>(this, "attack", 2, state ->
-                isAttacking() ? state.setAndContinue(RawAnimation.begin().thenPlay("attack")) : PlayState.STOP));
+                isAttacking() ? state.setAndContinue(RawAnimation.begin().thenPlay(attackAnim)) : PlayState.STOP));
     }
 
     @Override
@@ -166,7 +169,40 @@ public class KatanaManEntity extends Monster implements GeoEntity {
         return this.attackCooldown <= 0 && getTarget() != null && getTarget().isAlive();
     }
 
+    /** 每次起手挑一段动画：attack1 -> attack2 -> heavy 循环。 */
+    public void beginAttack() {
+        this.comboStep++;
+        this.nextHeavy = this.comboStep % 3 == 0;
+        this.attackAnim = this.nextHeavy ? "heavy" : (this.comboStep % 2 == 1 ? "attack1" : "attack2");
+        setAttacking(true);
+    }
+
+    /** 重击：范围更大、伤害更高、击退更强。 */
+    public void heavySlash() {
+        if (!(level() instanceof ServerLevel server)) {
+            return;
+        }
+        Vec3 eye = getEyePosition();
+        Vec3 dir = getLookAngle();
+        AABB box = new AABB(eye, eye.add(dir.scale(13.0D))).inflate(2.2D);
+        for (LivingEntity entity : server.getEntitiesOfClass(LivingEntity.class, box, e -> e != this && e.isAlive())) {
+            Vec3 to = entity.position().add(0.0D, entity.getBbHeight() * 0.5D, 0.0D).subtract(eye);
+            if (to.cross(dir).length() > 2.2D) {
+                continue;
+            }
+            entity.hurt(damageSources().mobAttack(this), 17.0F);
+            entity.knockback(1.8D, -dir.x, -dir.z);
+        }
+        SkillFx.beam(server, eye, dir, 13.0D, BLADE, 22);
+        SkillFx.ring(server, position(), 4.0D, BLADE);
+        server.playSound(null, blockPosition(), SoundEvents.GENERIC_EXPLODE, SoundSource.HOSTILE, 1.0F, 0.8F);
+        server.playSound(null, blockPosition(), SoundEvents.PLAYER_ATTACK_CRIT, SoundSource.HOSTILE, 2.0F, 0.7F);
+    }
+
     public int windupTicks() {
+        if (this.nextHeavy) {
+            return 32;
+        }
         return switch (phase()) {
             case 1 -> 24;
             case 2 -> 18;
