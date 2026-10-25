@@ -5,6 +5,7 @@ import com.example.csm.config.CsmConfig;
 import com.example.csm.network.CsmNetwork;
 import com.example.csm.registry.CsmEffects;
 import com.example.csm.registry.CsmEntities;
+import com.example.csm.registry.CsmArmorMaterials;
 import com.example.csm.registry.CsmItems;
 import com.example.csm.registry.CsmFeatures;
 import com.example.csm.registry.CsmParticles;
@@ -30,6 +31,7 @@ public final class Csm {
     public Csm() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         CsmEffects.EFFECTS.register(modBus);
+        CsmArmorMaterials.MATERIALS.register(modBus);
         CsmItems.ITEMS.register(modBus);
         CsmEntities.ENTITIES.register(modBus);
         CsmParticles.PARTICLES.register(modBus);

@@ -180,7 +180,7 @@ public class FutureDevilEntity extends Monster implements GeoEntity {
             }
         }
         if (player instanceof ServerPlayer serverPlayer) {
-            ForesightPacket.send(serverPlayer, 60, damage, threats);
+            ForesightPacket.send(serverPlayer, 400, damage, threats);
         }
     }
 }

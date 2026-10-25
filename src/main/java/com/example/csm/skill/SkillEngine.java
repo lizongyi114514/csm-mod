@@ -4,6 +4,8 @@ import com.example.csm.config.CsmConfig;
 import com.example.csm.contract.Contract;
 import com.example.csm.entity.FoxDevilEntity;
 import com.example.csm.entity.FutureDevilEntity;
+import com.example.csm.item.EyepatchItem;
+import net.minecraft.world.entity.EquipmentSlot;
 import com.example.csm.contract.ContractManager;
 import com.example.csm.form.FormManager;
 import com.example.csm.network.PlayAnimPacket;
@@ -42,6 +44,11 @@ public final class SkillEngine {
         if (ACTIVE.containsKey(player.getUUID())) {
             return false;
         }
+        if (definition.id().getPath().equals("aki/future_sight")
+                && player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof EyepatchItem) {
+            player.displayClientMessage(Component.translatable("csm.foresight.blocked"), true);
+            return false;
+        }
         if (!meetsRequirements(player, definition)) {
             player.displayClientMessage(Component.translatable("csm.message.requirement"), true);
             return false;
@@ -71,6 +78,11 @@ public final class SkillEngine {
         if (path.equals("aki/fox_contract")) {
             FoxDevilEntity.summon(player, 200);
         } else if (path.equals("aki/future_sight")) {
+            boolean first = !PlayerResources.hasFlag(player, "future_eye");
+            PlayerResources.setFlag(player, "future_eye", true);
+            if (first) {
+                player.displayClientMessage(Component.translatable("csm.foresight.eye_taken"), false);
+            }
             FutureDevilEntity.summon(player, 400);
         }
         SkillStatePacket.send(player);

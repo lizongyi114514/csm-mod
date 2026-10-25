@@ -46,6 +46,7 @@ public final class CommonEvents {
     public static void onBuildTab(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(CsmItems.CHAINSAW);
+            event.accept(CsmItems.EYEPATCH);
         }
     }
 

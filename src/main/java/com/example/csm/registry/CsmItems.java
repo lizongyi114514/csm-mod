@@ -2,6 +2,7 @@ package com.example.csm.registry;
 
 import com.example.csm.Csm;
 import com.example.csm.item.ChainsawItem;
+import com.example.csm.item.EyepatchItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +16,9 @@ public final class CsmItems {
     /** 电锯：GeckoLib 模型 + spin 动画（chain_top / chain_bottom 沿导板往复） */
     public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
             () -> new ChainsawItem(new Item.Properties().stacksTo(1).durability(500)));
+
+    /** 眼罩：戴上封住未来视。 */
+    public static final RegistryObject<Item> EYEPATCH = ITEMS.register("eyepatch", EyepatchItem::new);
 
     private CsmItems() {
     }
