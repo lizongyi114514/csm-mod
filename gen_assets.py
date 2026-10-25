@@ -133,7 +133,8 @@ def pick_sound(name: str) -> str:
 
 
 def main():
-    zh, en = dict(BASE), dict(BASE)
+    zh = {k: v[0] for k, v in BASE.items()}
+    en = {k: v[1] for k, v in BASE.items()}
     sounds = {}
     skills_src = os.path.join(RES, "data", "csm", "skills")
 
@@ -154,7 +155,8 @@ def main():
             snd = data.get("visual", {}).get("sound")
             if snd:
                 short = snd.split(":")[-1].replace("/", ".")
-                sounds[snd] = {"subtitle": "subtitles.csm." + short,
+                key = snd.split(":")[-1]
+                sounds[key] = {"subtitle": "subtitles.csm." + short,
                                "sounds": [{"name": pick_sound(snd)}]}
                 zh.setdefault("subtitles.csm." + short, zh_name)
                 en.setdefault("subtitles.csm." + short, en_name)

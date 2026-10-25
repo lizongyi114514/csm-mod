@@ -1,114 +1,36 @@
 {
-  "csm.boss.katana.frenzy": [
-    "武士刀男：刀身开始发烫……",
-    "Katana Man: the blade is heating up..."
-  ],
-  "csm.codex.hint": [
-    "点击左侧分区 · 滚轮翻页 · Esc 关闭",
-    "Click a section · scroll · Esc to close"
-  ],
-  "csm.codex.title": [
-    "电锯人图鉴",
-    "Chainsaw Man Codex"
-  ],
-  "csm.contract.curse": [
-    "咒",
-    "Curse"
-  ],
-  "csm.contract.curse.backlash": [
-    "诅咒反噬：第 %s 层",
-    "Curse backlash: stack %s"
-  ],
-  "csm.contract.fox": [
-    "狐",
-    "Fox"
-  ],
-  "csm.contract.fox.paid": [
-    "狐狸咬下了一口（已用 %s/3，剩 %s 次）",
-    "The fox takes its bite (%s/3 used, %s left)"
-  ],
-  "csm.contract.fox.revoked": [
-    "狐之契约已作废",
-    "The fox contract is spent"
-  ],
-  "csm.contract.future": [
-    "未",
-    "Future"
-  ],
-  "csm.contract.future.paid": [
-    "未来被预支了一次（最大生命 %s）",
-    "A future was spent (max health %s)"
-  ],
-  "csm.contract.reset": [
-    "契约账本已重置",
-    "Contract ledger reset"
-  ],
-  "csm.contract.unavailable": [
-    "契约次数已用尽",
-    "This contract is spent"
-  ],
+  "csm.boss.katana.frenzy": "Katana Man: the blade is heating up...",
+  "csm.codex.hint": "Click a section · scroll · Esc to close",
+  "csm.codex.title": "Chainsaw Man Codex",
+  "csm.contract.curse": "Curse",
+  "csm.contract.curse.backlash": "Curse backlash: stack %s",
+  "csm.contract.fox": "Fox",
+  "csm.contract.fox.paid": "The fox takes its bite (%s/3 used, %s left)",
+  "csm.contract.fox.revoked": "The fox contract is spent",
+  "csm.contract.future": "Future",
+  "csm.contract.future.paid": "A future was spent (max health %s)",
+  "csm.contract.reset": "Contract ledger reset",
+  "csm.contract.unavailable": "This contract is spent",
   "csm.form.denji": "Chainsaw",
   "csm.form.hunter": "Devil Hunter",
   "csm.form.makima": "Control Devil",
   "csm.form.pochita": "Hero of Hell",
   "csm.form.power": "Blood Fiend",
   "csm.form.reze": "Bomb Hybrid",
-  "csm.message.no_energy": [
-    "血液不足",
-    "Not enough blood"
-  ],
-  "csm.message.requirement": [
-    "条件不足：形态、等级或契约未满足",
-    "Requirements not met: form, level or contract"
-  ],
-  "death.attack.csm.technique": [
-    "%1$s 被锯成了两半",
-    "%1$s was cut in half"
-  ],
-  "entity.csm.gun_devil": [
-    "枪之恶魔",
-    "Gun Devil"
-  ],
-  "entity.csm.katana_man": [
-    "武士刀男",
-    "Katana Man"
-  ],
-  "item.csm.chainsaw": [
-    "电锯",
-    "Chainsaw"
-  ],
-  "itemGroup.csm": [
-    "电锯人",
-    "Chainsaw Man"
-  ],
-  "key.csm": [
-    "电锯人",
-    "Chainsaw Man"
-  ],
-  "key.csm.codex": [
-    "图鉴",
-    "Codex"
-  ],
-  "key.csm.form": [
-    "变身 / 解除",
-    "Transform / Revert"
-  ],
-  "key.csm.skill1": [
-    "技能 1",
-    "Skill 1"
-  ],
-  "key.csm.skill2": [
-    "技能 2",
-    "Skill 2"
-  ],
-  "key.csm.skill3": [
-    "技能 3",
-    "Skill 3"
-  ],
-  "key.csm.skill4": [
-    "技能 4",
-    "Skill 4"
-  ],
+  "csm.message.no_energy": "Not enough blood",
+  "csm.message.requirement": "Requirements not met: form, level or contract",
+  "death.attack.csm.technique": "%1$s was cut in half",
+  "entity.csm.gun_devil": "Gun Devil",
+  "entity.csm.katana_man": "Katana Man",
+  "item.csm.chainsaw": "Chainsaw",
+  "itemGroup.csm": "Chainsaw Man",
+  "key.csm": "Chainsaw Man",
+  "key.csm.codex": "Codex",
+  "key.csm.form": "Transform / Revert",
+  "key.csm.skill1": "Skill 1",
+  "key.csm.skill2": "Skill 2",
+  "key.csm.skill3": "Skill 3",
+  "key.csm.skill4": "Skill 4",
   "skill.csm.aki.curse_nail": "Curse Nail",
   "skill.csm.aki.fox_contract": "Fox Contract",
   "skill.csm.aki.future_sight": "Future Sight",
