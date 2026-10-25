@@ -7,7 +7,10 @@ import com.example.csm.entity.GunDevilEntity;
 import com.example.csm.entity.PochitaEntity;
 import com.example.csm.entity.KatanaManEntity;
 import com.example.csm.registry.CsmEntities;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.event.entity.SpawnPlacementRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -15,6 +18,14 @@ import net.minecraftforge.fml.common.Mod;
 public final class CsmEntityEvents {
 
     private CsmEntityEvents() {
+    }
+
+    @SubscribeEvent
+    public static void onSpawnPlacement(SpawnPlacementRegisterEvent event) {
+        event.register(CsmEntities.POCHITA.get(), SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                (type, level, spawnType, pos, random) -> level.getBlockState(pos.below()).isSolid(),
+                SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
 
     @SubscribeEvent

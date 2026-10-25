@@ -47,6 +47,8 @@ public final class CommonEvents {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(CsmItems.CHAINSAW);
             event.accept(CsmItems.EYEPATCH);
+            event.accept(CsmItems.POCHITA_HEART);
+            event.accept(CsmItems.POCHITA_SPAWN_EGG);
         }
     }
 

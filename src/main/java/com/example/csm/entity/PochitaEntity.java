@@ -1,6 +1,12 @@
 package com.example.csm.entity;
 
 import com.example.csm.registry.CsmEntities;
+import com.example.csm.registry.CsmItems;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -39,6 +45,8 @@ public class PochitaEntity extends PathfinderMob implements GeoEntity {
 
     private static final EntityDataAccessor<Boolean> REVVING =
             SynchedEntityData.defineId(PochitaEntity.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Boolean> SITTING =
+            SynchedEntityData.defineId(PochitaEntity.class, EntityDataSerializers.BOOLEAN);
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private UUID owner;
@@ -62,10 +70,26 @@ public class PochitaEntity extends PathfinderMob implements GeoEntity {
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(REVVING, false);
+        this.entityData.define(SITTING, false);
     }
 
     public boolean isRevving() {
         return this.entityData.get(REVVING);
+    }
+
+    public boolean isSitting() {
+        return this.entityData.get(SITTING);
+    }
+
+    public void setSitting(boolean sitting) {
+        this.entityData.set(SITTING, sitting);
+        if (sitting) {
+            this.getNavigation().stop();
+        }
+    }
+
+    public boolean isTamed() {
+        return this.owner != null;
     }
 
     private void setRevving(boolean value) {
@@ -74,10 +98,14 @@ public class PochitaEntity extends PathfinderMob implements GeoEntity {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<>(this, "movement", 4, state ->
-                state.setAndContinue(state.isMoving()
-                        ? RawAnimation.begin().thenLoop("walk")
-                        : RawAnimation.begin().thenLoop("idle"))));
+        controllers.add(new AnimationController<>(this, "movement", 4, state -> {
+            if (isSitting()) {
+                return state.setAndContinue(RawAnimation.begin().thenLoop("sit"));
+            }
+            return state.setAndContinue(state.isMoving()
+                    ? RawAnimation.begin().thenLoop("walk")
+                    : RawAnimation.begin().thenLoop("idle"));
+        }));
         controllers.add(new AnimationController<>(this, "saw", 2, state ->
                 isRevving() ? state.setAndContinue(RawAnimation.begin().thenLoop("rev")) : PlayState.STOP));
     }
@@ -120,8 +148,13 @@ public class PochitaEntity extends PathfinderMob implements GeoEntity {
         }
         if (this.owner != null) {
             Player player = this.level().getPlayerByUUID(this.owner);
-            if (player != null && distanceToSqr(player) > 36.0D) {
-                this.getNavigation().moveTo(player, 1.3D);
+            if (player != null) {
+                double distance = distanceToSqr(player);
+                if (distance > 24.0D * 24.0D) {
+                    this.randomTeleport(player.getX(), player.getY(), player.getZ(), true);
+                } else if (!isSitting() && distance > 36.0D) {
+                    this.getNavigation().moveTo(player, 1.3D);
+                }
             }
         }
     }
@@ -148,6 +181,49 @@ public class PochitaEntity extends PathfinderMob implements GeoEntity {
             this.setTarget(attacker);
         }
         return result;
+    }
+
+
+    @Override
+    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+        ItemStack stack = player.getItemInHand(hand);
+        if (!isTamed() && stack.is(Items.BONE)) {
+            if (!this.level().isClientSide) {
+                setOwner((ServerPlayer) player);
+                this.setPersistenceRequired();
+                if (!player.getAbilities().instabuild) {
+                    stack.shrink(1);
+                }
+                this.level().playSound(null, blockPosition(), SoundEvents.WOLF_WHINE, SoundSource.NEUTRAL, 1.0F, 1.2F);
+                player.displayClientMessage(Component.translatable("csm.pochita.tamed"), true);
+            }
+            return InteractionResult.sidedSuccess(this.level().isClientSide);
+        }
+        if (isTamed() && player.getUUID().equals(this.owner)) {
+            if (player.isShiftKeyDown()) {
+                if (!this.level().isClientSide) {
+                    setSitting(!isSitting());
+                    this.level().playSound(null, blockPosition(), SoundEvents.WOLF_WHINE, SoundSource.NEUTRAL, 0.8F, isSitting() ? 0.8F : 1.4F);
+                }
+                return InteractionResult.sidedSuccess(this.level().isClientSide);
+            }
+            if (stack.isEmpty()) {
+                if (!this.level().isClientSide) {
+                    this.heal(2.0F);
+                    if (this.level() instanceof ServerLevel server) {
+                        server.sendParticles(ParticleTypes.HEART, getX(), getY() + 0.8D, getZ(), 6, 0.3D, 0.3D, 0.3D, 0.02D);
+                    }
+                }
+                return InteractionResult.sidedSuccess(this.level().isClientSide);
+            }
+        }
+        return super.mobInteract(player, hand);
+    }
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHit) {
+        super.dropCustomDeathLoot(source, looting, recentlyHit);
+        this.spawnAtLocation(new ItemStack(CsmItems.POCHITA_HEART.get()));
     }
 
     public static PochitaEntity summon(ServerPlayer player) {
