@@ -1,0 +1,282 @@
+{
+  "csm:air_burst": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.air_burst"
+  },
+  "csm:blood_hammer": {
+    "sounds": [
+      {
+        "name": "minecraft:block.anvil.land"
+      }
+    ],
+    "subtitle": "subtitles.csm.blood_hammer"
+  },
+  "csm:blood_spear": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.hurt"
+      }
+    ],
+    "subtitle": "subtitles.csm.blood_spear"
+  },
+  "csm:bomb_kick": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.bomb_kick"
+  },
+  "csm:bomb_punch": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.bomb_punch"
+  },
+  "csm:bomb_throw": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.snowball.throw"
+      }
+    ],
+    "subtitle": "subtitles.csm.bomb_throw"
+  },
+  "csm:chain_rattle": {
+    "sounds": [
+      {
+        "name": "minecraft:block.chain.break"
+      }
+    ],
+    "subtitle": "subtitles.csm.chain_rattle"
+  },
+  "csm:chainsaw_rev": {
+    "sounds": [
+      {
+        "name": "minecraft:block.grindstone.use"
+      }
+    ],
+    "subtitle": "subtitles.csm.chainsaw_rev"
+  },
+  "csm:command": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.evoker.prepare_wololo"
+      }
+    ],
+    "subtitle": "subtitles.csm.command"
+  },
+  "csm:detonate": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.detonate"
+  },
+  "csm:dominate": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.elder_guardian.curse"
+      }
+    ],
+    "subtitle": "subtitles.csm.dominate"
+  },
+  "csm:engine_overdrive": {
+    "sounds": [
+      {
+        "name": "minecraft:block.piston.extend"
+      }
+    ],
+    "subtitle": "subtitles.csm.engine_overdrive"
+  },
+  "csm:engine_roar": {
+    "sounds": [
+      {
+        "name": "minecraft:block.piston.extend"
+      }
+    ],
+    "subtitle": "subtitles.csm.engine_roar"
+  },
+  "csm:erase": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.enderman.teleport"
+      }
+    ],
+    "subtitle": "subtitles.csm.erase"
+  },
+  "csm:finisher": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.finisher"
+  },
+  "csm:foresight": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.foresight"
+  },
+  "csm:four_saw": {
+    "sounds": [
+      {
+        "name": "minecraft:block.grindstone.use"
+      }
+    ],
+    "subtitle": "subtitles.csm.four_saw"
+  },
+  "csm:fox_howl": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.wolf.howl"
+      }
+    ],
+    "subtitle": "subtitles.csm.fox_howl"
+  },
+  "csm:guzzle": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.generic.drink"
+      }
+    ],
+    "subtitle": "subtitles.csm.guzzle"
+  },
+  "csm:heal": {
+    "sounds": [
+      {
+        "name": "minecraft:block.brewing_stand.brew"
+      }
+    ],
+    "subtitle": "subtitles.csm.heal"
+  },
+  "csm:hero_rev": {
+    "sounds": [
+      {
+        "name": "minecraft:block.grindstone.use"
+      }
+    ],
+    "subtitle": "subtitles.csm.hero_rev"
+  },
+  "csm:katana_draw": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.katana_draw"
+  },
+  "csm:katana_swing": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.katana_swing"
+  },
+  "csm:nail_hit": {
+    "sounds": [
+      {
+        "name": "minecraft:block.chain.break"
+      }
+    ],
+    "subtitle": "subtitles.csm.nail_hit"
+  },
+  "csm:nail_volley": {
+    "sounds": [
+      {
+        "name": "minecraft:block.chain.break"
+      }
+    ],
+    "subtitle": "subtitles.csm.nail_volley"
+  },
+  "csm:rain": {
+    "sounds": [
+      {
+        "name": "minecraft:weather.rain"
+      }
+    ],
+    "subtitle": "subtitles.csm.rain"
+  },
+  "csm:rats": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.rabbit.ambient"
+      }
+    ],
+    "subtitle": "subtitles.csm.rats"
+  },
+  "csm:roar": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.ender_dragon.growl"
+      }
+    ],
+    "subtitle": "subtitles.csm.roar"
+  },
+  "csm:sacrifice": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.witch.drink"
+      }
+    ],
+    "subtitle": "subtitles.csm.sacrifice"
+  },
+  "csm:saw_hit": {
+    "sounds": [
+      {
+        "name": "minecraft:block.grindstone.use"
+      }
+    ],
+    "subtitle": "subtitles.csm.saw_hit"
+  },
+  "csm:saw_throw": {
+    "sounds": [
+      {
+        "name": "minecraft:block.grindstone.use"
+      }
+    ],
+    "subtitle": "subtitles.csm.saw_throw"
+  },
+  "csm:self_destruct": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.self_destruct"
+  },
+  "csm:shield_up": {
+    "sounds": [
+      {
+        "name": "minecraft:item.shield.block"
+      }
+    ],
+    "subtitle": "subtitles.csm.shield_up"
+  },
+  "csm:snipe": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.arrow.shoot"
+      }
+    ],
+    "subtitle": "subtitles.csm.snipe"
+  },
+  "csm:sword_swing": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.attack.sweep"
+      }
+    ],
+    "subtitle": "subtitles.csm.sword_swing"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "csm:pochita/hell_hero_dash",
+  "slot": 0,
+  "special": "",
+  "note": "地狱英雄突进：四臂前冲",
+  "school": "pochita",
+  "tier": 2,
+  "cost": {
+    "energy": 25,
+    "cooldown": 120
+  },
+  "cast": {
+    "windup": 6,
+    "active": 6,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 20,
+    "knockback": 0.8,
+    "damage_type": "csm:technique",
+    "range": 8.0,
+    "width": 2.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_hero_dash",
+    "particle": "csm:red_trail",
+    "sound": "csm:hero_rev",
+    "screen_shake": 0.4,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 10,
+    "flag": "csm:form_pochita"
+  }
+}

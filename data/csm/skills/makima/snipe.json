@@ -1,0 +1,43 @@
+{
+  "id": "csm:makima/snipe",
+  "slot": 99,
+  "special": "",
+  "note": "远程狙击：超远直线，需读条",
+  "school": "makima",
+  "tier": 3,
+  "cost": {
+    "energy": 50,
+    "cooldown": 400
+  },
+  "cast": {
+    "windup": 20,
+    "active": 1,
+    "recovery": 20,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 30,
+    "knockback": 0.5,
+    "damage_type": "csm:technique",
+    "range": 24.0,
+    "width": 0.6,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_snipe",
+    "particle": "csm:bullet_line",
+    "sound": "csm:snipe",
+    "screen_shake": 0.7,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 8,
+    "flag": "csm:form_control"
+  }
+}

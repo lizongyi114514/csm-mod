@@ -1,0 +1,38 @@
+{
+  "id": "csm:reze/self_destruct",
+  "slot": 99,
+  "special": "detonate",
+  "note": "自爆：大范围高伤",
+  "school": "reze",
+  "tier": 3,
+  "cost": {
+    "energy": 45,
+    "cooldown": 500
+  },
+  "cast": {
+    "windup": 20,
+    "active": 2,
+    "recovery": 20,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 30,
+    "knockback": 1.2,
+    "damage_type": "csm:technique",
+    "range": 8.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_self_destruct",
+    "particle": "csm:mega_explosion",
+    "sound": "csm:self_destruct",
+    "screen_shake": 0.9
+  },
+  "requires": {
+    "level": 8,
+    "flag": "csm:form_bomb"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "csm:reze/air_burst",
+  "slot": 3,
+  "special": "",
+  "note": "空中引爆：位移 + 范围",
+  "school": "reze",
+  "tier": 2,
+  "cost": {
+    "energy": 22,
+    "cooldown": 120
+  },
+  "cast": {
+    "windup": 10,
+    "active": 3,
+    "recovery": 16,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 14,
+    "knockback": 0.9,
+    "damage_type": "csm:technique",
+    "range": 4.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_air_burst",
+    "particle": "csm:air_blast",
+    "sound": "csm:air_burst",
+    "screen_shake": 0.4
+  },
+  "requires": {
+    "level": 3,
+    "flag": "csm:form_bomb"
+  }
+}

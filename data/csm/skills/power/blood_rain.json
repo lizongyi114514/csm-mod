@@ -1,0 +1,50 @@
+{
+  "id": "csm:power/blood_rain",
+  "slot": 99,
+  "special": "",
+  "note": "血雨：范围减速+流血",
+  "school": "power",
+  "tier": 3,
+  "cost": {
+    "energy": 28,
+    "cooldown": 160
+  },
+  "cast": {
+    "windup": 10,
+    "active": 4,
+    "recovery": 16,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 9,
+    "knockback": 0.2,
+    "damage_type": "csm:technique",
+    "range": 5.0,
+    "effects": [
+      {
+        "id": "csm:bleeding",
+        "duration": 160,
+        "amplifier": 0
+      },
+      {
+        "id": "minecraft:slowness",
+        "duration": 80,
+        "amplifier": 1
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_blood_rain",
+    "particle": "csm:blood_rain",
+    "sound": "csm:rain",
+    "screen_shake": 0.2
+  },
+  "requires": {
+    "level": 5,
+    "flag": "csm:form_blood"
+  }
+}

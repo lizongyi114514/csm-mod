@@ -1,0 +1,50 @@
+{
+  "id": "csm:denji/saw_throw",
+  "slot": 3,
+  "special": "",
+  "note": "飞锯：远程消耗",
+  "school": "denji",
+  "tier": 2,
+  "cost": {
+    "energy": 22,
+    "cooldown": 110
+  },
+  "cast": {
+    "windup": 7,
+    "active": 3,
+    "recovery": 16,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 14,
+    "knockback": 0.3,
+    "damage_type": "csm:technique",
+    "range": 14.0,
+    "width": 0.8,
+    "effects": [
+      {
+        "id": "csm:bleeding",
+        "duration": 60,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_saw_throw",
+    "particle": "csm:saw_spin",
+    "sound": "csm:saw_throw",
+    "screen_shake": 0.2,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 3,
+    "flag": "csm:form_chainsaw"
+  }
+}

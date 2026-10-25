@@ -1,0 +1,44 @@
+{
+  "id": "csm:power/blood_shield",
+  "slot": 3,
+  "special": "",
+  "note": "血盾：吸收伤害，破盾反噬",
+  "school": "power",
+  "tier": 2,
+  "cost": {
+    "energy": 20,
+    "cooldown": 240
+  },
+  "cast": {
+    "windup": 6,
+    "active": 1,
+    "recovery": 8,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 0.5,
+    "effects": [
+      {
+        "id": "csm:blood_shield",
+        "duration": 200,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_blood_shield",
+    "particle": "csm:blood_ring",
+    "sound": "csm:shield_up",
+    "screen_shake": 0.1
+  },
+  "requires": {
+    "level": 4,
+    "flag": "csm:form_blood"
+  }
+}

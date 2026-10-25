@@ -1,0 +1,47 @@
+{
+  "id": "csm:aki/nail_volley",
+  "slot": 99,
+  "special": "",
+  "note": "钉雨：一次挂多个诅咒标记",
+  "school": "aki",
+  "tier": 2,
+  "cost": {
+    "energy": 18,
+    "cooldown": 140
+  },
+  "cast": {
+    "windup": 8,
+    "active": 4,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 6,
+    "knockback": 0.1,
+    "damage_type": "csm:technique",
+    "range": 6.0,
+    "angle": 70,
+    "effects": [
+      {
+        "id": "csm:curse_mark",
+        "duration": 300,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_nail_volley",
+    "particle": "csm:nail_rain",
+    "sound": "csm:nail_volley",
+    "screen_shake": 0.15
+  },
+  "requires": {
+    "level": 5,
+    "flag": "csm:contract_curse",
+    "contract": "curse"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "csm:denji/guts_finisher",
+  "slot": 99,
+  "special": "",
+  "note": "剖腹终结：大范围横斩",
+  "school": "denji",
+  "tier": 3,
+  "cost": {
+    "energy": 45,
+    "cooldown": 360
+  },
+  "cast": {
+    "windup": 16,
+    "active": 4,
+    "recovery": 24,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 34,
+    "knockback": 1.0,
+    "damage_type": "csm:technique",
+    "range": 3.5,
+    "angle": 120,
+    "effects": [
+      {
+        "id": "csm:bleeding",
+        "duration": 200,
+        "amplifier": 1
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_guts_finisher",
+    "particle": "csm:blood_burst",
+    "sound": "csm:finisher",
+    "screen_shake": 0.6,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 8,
+    "flag": "csm:form_chainsaw"
+  }
+}

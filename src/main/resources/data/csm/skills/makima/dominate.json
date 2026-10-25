@@ -1,0 +1,44 @@
+{
+  "id": "csm:makima/dominate",
+  "slot": 1,
+  "special": "",
+  "note": "支配：把目标变成傀儡",
+  "school": "makima",
+  "tier": 2,
+  "cost": {
+    "energy": 20,
+    "cooldown": 200
+  },
+  "cast": {
+    "windup": 10,
+    "active": 2,
+    "recovery": 14,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "single",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 3.0,
+    "effects": [
+      {
+        "id": "csm:dominated",
+        "duration": 240,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_dominate",
+    "particle": "csm:chain_bind",
+    "sound": "csm:dominate",
+    "screen_shake": 0.15
+  },
+  "requires": {
+    "level": 4,
+    "flag": "csm:form_control"
+  }
+}

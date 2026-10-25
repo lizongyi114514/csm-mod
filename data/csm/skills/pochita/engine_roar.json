@@ -1,0 +1,45 @@
+{
+  "id": "csm:pochita/engine_roar",
+  "slot": 3,
+  "special": "",
+  "note": "引擎咆哮：击退+恐惧",
+  "school": "pochita",
+  "tier": 3,
+  "cost": {
+    "energy": 30,
+    "cooldown": 300
+  },
+  "cast": {
+    "windup": 8,
+    "active": 2,
+    "recovery": 20,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 6,
+    "knockback": 2.0,
+    "damage_type": "csm:technique",
+    "range": 6.0,
+    "effects": [
+      {
+        "id": "csm:terror",
+        "duration": 200,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_roar",
+    "particle": "csm:shockwave",
+    "sound": "csm:roar",
+    "screen_shake": 0.6
+  },
+  "requires": {
+    "level": 10,
+    "flag": "csm:form_pochita"
+  }
+}

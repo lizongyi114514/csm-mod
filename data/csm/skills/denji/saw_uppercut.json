@@ -1,0 +1,43 @@
+{
+  "id": "csm:denji/saw_uppercut",
+  "slot": 99,
+  "special": "",
+  "note": "上挑锯：把目标挑空",
+  "school": "denji",
+  "tier": 2,
+  "cost": {
+    "energy": 20,
+    "cooldown": 120
+  },
+  "cast": {
+    "windup": 7,
+    "active": 3,
+    "recovery": 18,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 15,
+    "knockback": 1.4,
+    "damage_type": "csm:technique",
+    "range": 3.0,
+    "angle": 45,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_saw_uppercut",
+    "particle": "csm:spark_arc",
+    "sound": "csm:saw_hit",
+    "screen_shake": 0.3,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 4,
+    "flag": "csm:form_chainsaw"
+  }
+}

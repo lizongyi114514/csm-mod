@@ -1,0 +1,45 @@
+{
+  "id": "csm:pochita/concept_erase",
+  "slot": 2,
+  "special": "",
+  "note": "概念抹除：处决低血量目标，无掉落",
+  "school": "pochita",
+  "tier": 3,
+  "cost": {
+    "energy": 60,
+    "cooldown": 600
+  },
+  "cast": {
+    "windup": 20,
+    "active": 2,
+    "recovery": 30,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "single",
+    "damage": 60,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 2.5,
+    "effects": [
+      {
+        "id": "csm:erased",
+        "duration": 40,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_erase",
+    "particle": "csm:erase_void",
+    "sound": "csm:erase",
+    "screen_shake": 0.8
+  },
+  "requires": {
+    "level": 12,
+    "flag": "csm:form_pochita"
+  }
+}

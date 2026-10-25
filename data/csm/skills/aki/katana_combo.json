@@ -1,0 +1,46 @@
+{
+  "id": "csm:aki/katana_combo",
+  "slot": 1,
+  "special": "",
+  "note": "三连斩：动作中段可取消",
+  "school": "aki",
+  "tier": 2,
+  "cost": {
+    "energy": 14,
+    "cooldown": 70
+  },
+  "cast": {
+    "windup": 4,
+    "active": 6,
+    "recovery": 10,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 9,
+    "knockback": 0.2,
+    "damage_type": "csm:technique",
+    "range": 3.0,
+    "angle": 80,
+    "effects": [
+      {
+        "id": "csm:bleeding",
+        "duration": 80,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_katana_combo",
+    "particle": "csm:slash_arc",
+    "sound": "csm:katana_swing",
+    "screen_shake": 0.15
+  },
+  "requires": {
+    "level": 2,
+    "flag": "csm:form_hunter"
+  }
+}

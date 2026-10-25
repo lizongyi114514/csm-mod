@@ -1,0 +1,47 @@
+{
+  "id": "csm:aki/curse_nail",
+  "slot": 3,
+  "special": "",
+  "note": "诅咒钉：叠三层触发诅咒",
+  "school": "aki",
+  "tier": 2,
+  "cost": {
+    "energy": 12,
+    "cooldown": 90
+  },
+  "cast": {
+    "windup": 8,
+    "active": 2,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 8,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 10.0,
+    "width": 0.8,
+    "effects": [
+      {
+        "id": "csm:curse_mark",
+        "duration": 600,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_nail",
+    "particle": "csm:curse_spark",
+    "sound": "csm:nail_hit",
+    "screen_shake": 0.2
+  },
+  "requires": {
+    "level": 4,
+    "flag": "csm:contract_curse",
+    "contract": "curse"
+  }
+}

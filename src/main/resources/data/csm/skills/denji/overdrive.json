@@ -1,0 +1,44 @@
+{
+  "id": "csm:denji/overdrive",
+  "slot": 99,
+  "special": "",
+  "note": "全开·暴走：攻速/伤害提升 8 秒",
+  "school": "denji",
+  "tier": 3,
+  "cost": {
+    "energy": 40,
+    "cooldown": 400
+  },
+  "cast": {
+    "windup": 10,
+    "active": 1,
+    "recovery": 10,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 0.5,
+    "effects": [
+      {
+        "id": "csm:overdrive",
+        "duration": 160,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_overdrive",
+    "particle": "csm:steam_burst",
+    "sound": "csm:engine_overdrive",
+    "screen_shake": 0.35
+  },
+  "requires": {
+    "level": 6,
+    "flag": "csm:form_chainsaw"
+  }
+}

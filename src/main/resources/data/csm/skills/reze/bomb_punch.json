@@ -1,0 +1,39 @@
+{
+  "id": "csm:reze/bomb_punch",
+  "slot": 1,
+  "special": "prime",
+  "note": "爆破拳：快，叠 1 层",
+  "school": "reze",
+  "tier": 1,
+  "cost": {
+    "energy": 8,
+    "cooldown": 40
+  },
+  "cast": {
+    "windup": 4,
+    "active": 3,
+    "recovery": 8,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 9,
+    "knockback": 0.3,
+    "damage_type": "csm:technique",
+    "range": 3.5,
+    "width": 1.2,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_bomb_punch",
+    "particle": "csm:spark_small",
+    "sound": "csm:bomb_punch",
+    "screen_shake": 0.2
+  },
+  "requires": {
+    "level": 1,
+    "flag": "csm:form_bomb"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "atk_dominate": {
+      "animation_length": 1.3,
+      "loop": false,
+      "bones": {
+        "right_arm": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "0.260": {
+              "vector": [
+                -88,
+                0,
+                0
+              ]
+            },
+            "0.975": {
+              "vector": [
+                -88,
+                0,
+                0
+              ]
+            },
+            "1.300": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "0.325": {
+              "vector": [
+                -6,
+                0,
+                0
+              ]
+            },
+            "1.300": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

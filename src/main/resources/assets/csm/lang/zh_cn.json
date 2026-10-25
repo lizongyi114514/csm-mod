@@ -1,0 +1,184 @@
+{
+  "csm.boss.katana.frenzy": [
+    "武士刀男：刀身开始发烫……",
+    "Katana Man: the blade is heating up..."
+  ],
+  "csm.codex.hint": [
+    "点击左侧分区 · 滚轮翻页 · Esc 关闭",
+    "Click a section · scroll · Esc to close"
+  ],
+  "csm.codex.title": [
+    "电锯人图鉴",
+    "Chainsaw Man Codex"
+  ],
+  "csm.contract.curse": [
+    "咒",
+    "Curse"
+  ],
+  "csm.contract.curse.backlash": [
+    "诅咒反噬：第 %s 层",
+    "Curse backlash: stack %s"
+  ],
+  "csm.contract.fox": [
+    "狐",
+    "Fox"
+  ],
+  "csm.contract.fox.paid": [
+    "狐狸咬下了一口（已用 %s/3，剩 %s 次）",
+    "The fox takes its bite (%s/3 used, %s left)"
+  ],
+  "csm.contract.fox.revoked": [
+    "狐之契约已作废",
+    "The fox contract is spent"
+  ],
+  "csm.contract.future": [
+    "未",
+    "Future"
+  ],
+  "csm.contract.future.paid": [
+    "未来被预支了一次（最大生命 %s）",
+    "A future was spent (max health %s)"
+  ],
+  "csm.contract.reset": [
+    "契约账本已重置",
+    "Contract ledger reset"
+  ],
+  "csm.contract.unavailable": [
+    "契约次数已用尽",
+    "This contract is spent"
+  ],
+  "csm.form.denji": "电锯",
+  "csm.form.hunter": "恶魔猎人",
+  "csm.form.makima": "支配恶魔",
+  "csm.form.pochita": "英雄之恶魔",
+  "csm.form.power": "血之魔人",
+  "csm.form.reze": "炸弹混血",
+  "csm.message.no_energy": [
+    "血液不足",
+    "Not enough blood"
+  ],
+  "csm.message.requirement": [
+    "条件不足：形态、等级或契约未满足",
+    "Requirements not met: form, level or contract"
+  ],
+  "death.attack.csm.technique": [
+    "%1$s 被锯成了两半",
+    "%1$s was cut in half"
+  ],
+  "entity.csm.gun_devil": [
+    "枪之恶魔",
+    "Gun Devil"
+  ],
+  "entity.csm.katana_man": [
+    "武士刀男",
+    "Katana Man"
+  ],
+  "item.csm.chainsaw": [
+    "电锯",
+    "Chainsaw"
+  ],
+  "itemGroup.csm": [
+    "电锯人",
+    "Chainsaw Man"
+  ],
+  "key.csm": [
+    "电锯人",
+    "Chainsaw Man"
+  ],
+  "key.csm.codex": [
+    "图鉴",
+    "Codex"
+  ],
+  "key.csm.form": [
+    "变身 / 解除",
+    "Transform / Revert"
+  ],
+  "key.csm.skill1": [
+    "技能 1",
+    "Skill 1"
+  ],
+  "key.csm.skill2": [
+    "技能 2",
+    "Skill 2"
+  ],
+  "key.csm.skill3": [
+    "技能 3",
+    "Skill 3"
+  ],
+  "key.csm.skill4": [
+    "技能 4",
+    "Skill 4"
+  ],
+  "skill.csm.aki.curse_nail": "诅咒钉",
+  "skill.csm.aki.fox_contract": "狐之契约",
+  "skill.csm.aki.future_sight": "未来视",
+  "skill.csm.aki.katana_combo": "三连斩",
+  "skill.csm.aki.katana_draw": "拔刀",
+  "skill.csm.aki.nail_volley": "钉雨",
+  "skill.csm.denji.blood_guzzle": "吸血再生",
+  "skill.csm.denji.chainsaw_rush": "链锯冲锋",
+  "skill.csm.denji.double_saw": "双锯斩",
+  "skill.csm.denji.guts_finisher": "剖腹终结",
+  "skill.csm.denji.head_saw_lunge": "头锯突进",
+  "skill.csm.denji.overdrive": "全开·暴走",
+  "skill.csm.denji.saw_throw": "飞锯",
+  "skill.csm.denji.saw_uppercut": "上挑锯",
+  "skill.csm.makima.chain_pull": "锁链牵引",
+  "skill.csm.makima.command": "命令",
+  "skill.csm.makima.dominate": "支配",
+  "skill.csm.makima.rat_swarm": "鼠群",
+  "skill.csm.makima.sacrifice": "替身",
+  "skill.csm.makima.snipe": "远程狙击",
+  "skill.csm.pochita.concept_erase": "概念抹除",
+  "skill.csm.pochita.engine_roar": "引擎咆哮",
+  "skill.csm.pochita.four_arm_flurry": "四臂乱舞",
+  "skill.csm.pochita.hell_hero_dash": "地狱英雄突进",
+  "skill.csm.power.blood_hammer": "血锤",
+  "skill.csm.power.blood_rain": "血雨",
+  "skill.csm.power.blood_regenerate": "血再生",
+  "skill.csm.power.blood_shield": "血盾",
+  "skill.csm.power.blood_spear": "血矛",
+  "skill.csm.power.blood_sword": "血剑",
+  "skill.csm.reze.air_burst": "空中引爆",
+  "skill.csm.reze.bomb_kick": "爆炸踢",
+  "skill.csm.reze.bomb_punch": "爆破拳",
+  "skill.csm.reze.bomb_volley": "投掷炸弹",
+  "skill.csm.reze.detonate": "引爆",
+  "skill.csm.reze.regenerate": "再生",
+  "skill.csm.reze.self_destruct": "自爆",
+  "subtitles.csm.air_burst": "空中引爆",
+  "subtitles.csm.blood_hammer": "血锤",
+  "subtitles.csm.blood_spear": "血矛",
+  "subtitles.csm.bomb_kick": "爆炸踢",
+  "subtitles.csm.bomb_punch": "爆破拳",
+  "subtitles.csm.bomb_throw": "投掷炸弹",
+  "subtitles.csm.chain_rattle": "锁链牵引",
+  "subtitles.csm.chainsaw_rev": "链锯冲锋",
+  "subtitles.csm.command": "命令",
+  "subtitles.csm.detonate": "引爆",
+  "subtitles.csm.dominate": "支配",
+  "subtitles.csm.engine_overdrive": "全开·暴走",
+  "subtitles.csm.engine_roar": "头锯突进",
+  "subtitles.csm.erase": "概念抹除",
+  "subtitles.csm.finisher": "剖腹终结",
+  "subtitles.csm.foresight": "未来视",
+  "subtitles.csm.four_saw": "四臂乱舞",
+  "subtitles.csm.fox_howl": "狐之契约",
+  "subtitles.csm.guzzle": "吸血再生",
+  "subtitles.csm.heal": "血再生",
+  "subtitles.csm.hero_rev": "地狱英雄突进",
+  "subtitles.csm.katana_draw": "拔刀",
+  "subtitles.csm.katana_swing": "三连斩",
+  "subtitles.csm.nail_hit": "诅咒钉",
+  "subtitles.csm.nail_volley": "钉雨",
+  "subtitles.csm.rain": "血雨",
+  "subtitles.csm.rats": "鼠群",
+  "subtitles.csm.roar": "引擎咆哮",
+  "subtitles.csm.sacrifice": "替身",
+  "subtitles.csm.saw_hit": "双锯斩",
+  "subtitles.csm.saw_throw": "飞锯",
+  "subtitles.csm.self_destruct": "自爆",
+  "subtitles.csm.shield_up": "血盾",
+  "subtitles.csm.snipe": "远程狙击",
+  "subtitles.csm.sword_swing": "血剑"
+}

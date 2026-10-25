@@ -1,0 +1,41 @@
+﻿modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="csm"
+version="0.1.0"
+displayName="Chainsaw Man: Blood & Saw"
+authors="CSM Team"
+description='''
+非官方同人模组：电锯人题材的技能战斗。
+拉绳变身、用血液换输出、契约要付账。
+'''
+
+[[dependencies.csm]]
+modId="playeranimator"
+mandatory=true
+versionRange="[1.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.csm]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.4,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.csm]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.csm]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

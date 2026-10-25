@@ -1,0 +1,43 @@
+{
+  "id": "csm:denji/head_saw_lunge",
+  "slot": 2,
+  "special": "",
+  "note": "头锯突进：位移+穿透",
+  "school": "denji",
+  "tier": 2,
+  "cost": {
+    "energy": 20,
+    "cooldown": 90
+  },
+  "cast": {
+    "windup": 5,
+    "active": 5,
+    "recovery": 14,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 16,
+    "knockback": 0.8,
+    "damage_type": "csm:technique",
+    "range": 6.0,
+    "width": 1.4,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_head_lunge",
+    "particle": "csm:chainsaw_trail",
+    "sound": "csm:engine_roar",
+    "screen_shake": 0.3,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 3,
+    "flag": "csm:form_chainsaw"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "csm:makima/sacrifice",
+  "slot": 2,
+  "special": "",
+  "note": "替身：伤害转移给被支配者",
+  "school": "makima",
+  "tier": 3,
+  "cost": {
+    "energy": 35,
+    "cooldown": 400
+  },
+  "cast": {
+    "windup": 8,
+    "active": 1,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 0.5,
+    "effects": [
+      {
+        "id": "csm:sacrifice_ward",
+        "duration": 200,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_sacrifice",
+    "particle": "csm:red_string",
+    "sound": "csm:sacrifice",
+    "screen_shake": 0.2
+  },
+  "requires": {
+    "level": 7,
+    "flag": "csm:form_control"
+  }
+}

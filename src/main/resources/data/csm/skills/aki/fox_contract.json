@@ -1,0 +1,51 @@
+{
+  "id": "csm:aki/fox_contract",
+  "slot": 2,
+  "special": "",
+  "note": "狐之契约：巨型狐首咬合",
+  "school": "aki",
+  "tier": 3,
+  "cost": {
+    "energy": 30,
+    "cooldown": 300
+  },
+  "cast": {
+    "windup": 14,
+    "active": 4,
+    "recovery": 22,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 24,
+    "knockback": 1.0,
+    "damage_type": "csm:technique",
+    "range": 5.0,
+    "angle": 60,
+    "effects": [
+      {
+        "id": "csm:devoured",
+        "duration": 40,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_fox",
+    "particle": "csm:fox_bite",
+    "sound": "csm:fox_howl",
+    "screen_shake": 0.5,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 6,
+    "flag": "csm:contract_fox",
+    "contract": "fox"
+  }
+}

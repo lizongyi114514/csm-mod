@@ -1,0 +1,44 @@
+{
+  "id": "csm:aki/future_sight",
+  "slot": 99,
+  "special": "",
+  "note": "未来视：短时间完美闪避",
+  "school": "aki",
+  "tier": 2,
+  "cost": {
+    "energy": 15,
+    "cooldown": 360
+  },
+  "cast": {
+    "windup": 6,
+    "active": 1,
+    "recovery": 10,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 0.5,
+    "effects": [
+      {
+        "id": "csm:foresight",
+        "duration": 120,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_foresight",
+    "particle": "csm:eye_glow",
+    "sound": "csm:foresight"
+  },
+  "requires": {
+    "level": 5,
+    "flag": "csm:contract_future",
+    "contract": "future"
+  }
+}

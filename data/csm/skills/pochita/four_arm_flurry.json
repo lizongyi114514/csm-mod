@@ -1,0 +1,38 @@
+{
+  "id": "csm:pochita/four_arm_flurry",
+  "slot": 1,
+  "special": "",
+  "note": "四臂乱舞：环身多段",
+  "school": "pochita",
+  "tier": 3,
+  "cost": {
+    "energy": 35,
+    "cooldown": 200
+  },
+  "cast": {
+    "windup": 10,
+    "active": 8,
+    "recovery": 18,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 26,
+    "knockback": 0.9,
+    "damage_type": "csm:technique",
+    "range": 4.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_four_arm",
+    "particle": "csm:slash_storm",
+    "sound": "csm:four_saw",
+    "screen_shake": 0.5
+  },
+  "requires": {
+    "level": 10,
+    "flag": "csm:form_pochita"
+  }
+}

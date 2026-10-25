@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "atk_katana_combo": {
+      "animation_length": 1.0,
+      "loop": false,
+      "bones": {
+        "right_arm": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "0.150": {
+              "vector": [
+                -150,
+                0,
+                -20
+              ]
+            },
+            "0.450": {
+              "vector": [
+                -20,
+                0,
+                15
+              ]
+            },
+            "1.000": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "torso": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "0.250": {
+              "vector": [
+                0,
+                -18,
+                0
+              ]
+            },
+            "0.500": {
+              "vector": [
+                0,
+                22,
+                0
+              ]
+            },
+            "1.000": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

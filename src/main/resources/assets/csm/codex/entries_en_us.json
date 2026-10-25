@@ -1,0 +1,363 @@
+{
+  "sections": [
+    {
+      "title": "Overview",
+      "entries": [
+        {
+          "title": "How to play",
+          "body": [
+            "1-4 cast, R transform, C opens this codex.",
+            "Form decides your skill set: /csm form <hunter|denji|pochita|power|makima|reze>."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Denji",
+      "entries": [
+        {
+          "title": "Chainsaw Rush",
+          "body": [
+            "键 1 · 伤害 12 · 冷却 2.5s · 血耗 12"
+          ]
+        },
+        {
+          "title": "Double Saw",
+          "body": [
+            "键 2 · 伤害 18 · 冷却 4s · 血耗 18"
+          ]
+        },
+        {
+          "title": "Head Saw Lunge",
+          "body": [
+            "键 3 · 伤害 16 · 冷却 4.5s · 血耗 20"
+          ]
+        },
+        {
+          "title": "Saw Throw",
+          "body": [
+            "键 4 · 伤害 14 · 冷却 5.5s · 血耗 22"
+          ]
+        },
+        {
+          "title": "Blood Guzzle",
+          "body": [
+            "命令 · 伤害 0 · 冷却 15s · 血耗 0"
+          ]
+        },
+        {
+          "title": "Guts Finisher",
+          "body": [
+            "命令 · 伤害 34 · 冷却 18s · 血耗 45"
+          ]
+        },
+        {
+          "title": "Overdrive",
+          "body": [
+            "命令 · 伤害 0 · 冷却 20s · 血耗 40"
+          ]
+        },
+        {
+          "title": "Saw Uppercut",
+          "body": [
+            "命令 · 伤害 15 · 冷却 6s · 血耗 20"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pochita",
+      "entries": [
+        {
+          "title": "Hell Hero Dash",
+          "body": [
+            "键 1 · 伤害 20 · 冷却 6s · 血耗 25"
+          ]
+        },
+        {
+          "title": "Four-Arm Flurry",
+          "body": [
+            "键 2 · 伤害 26 · 冷却 10s · 血耗 35"
+          ]
+        },
+        {
+          "title": "Concept Erasure",
+          "body": [
+            "键 3 · 伤害 60 · 冷却 30s · 血耗 60"
+          ]
+        },
+        {
+          "title": "Engine Roar",
+          "body": [
+            "键 4 · 伤害 6 · 冷却 15s · 血耗 30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Power",
+      "entries": [
+        {
+          "title": "Blood Hammer",
+          "body": [
+            "键 1 · 伤害 22 · 冷却 5s · 血耗 25"
+          ]
+        },
+        {
+          "title": "Blood Spear",
+          "body": [
+            "键 2 · 伤害 16 · 冷却 4s · 血耗 18"
+          ]
+        },
+        {
+          "title": "Blood Sword",
+          "body": [
+            "键 3 · 伤害 11 · 冷却 2s · 血耗 10"
+          ]
+        },
+        {
+          "title": "Blood Shield",
+          "body": [
+            "键 4 · 伤害 0 · 冷却 12s · 血耗 20"
+          ]
+        },
+        {
+          "title": "Blood Rain",
+          "body": [
+            "命令 · 伤害 9 · 冷却 8s · 血耗 28"
+          ]
+        },
+        {
+          "title": "Blood Regeneration",
+          "body": [
+            "命令 · 伤害 0 · 冷却 14s · 血耗 0"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aki",
+      "entries": [
+        {
+          "title": "Iai Draw",
+          "body": [
+            "键 1 · 伤害 15 · 冷却 3s · 血耗 10"
+          ]
+        },
+        {
+          "title": "Triple Slash",
+          "body": [
+            "键 2 · 伤害 9 · 冷却 3.5s · 血耗 14"
+          ]
+        },
+        {
+          "title": "Fox Contract",
+          "body": [
+            "键 3 · 伤害 24 · 冷却 15s · 血耗 30"
+          ]
+        },
+        {
+          "title": "Curse Nail",
+          "body": [
+            "键 4 · 伤害 8 · 冷却 4.5s · 血耗 12"
+          ]
+        },
+        {
+          "title": "Future Sight",
+          "body": [
+            "命令 · 伤害 0 · 冷却 18s · 血耗 15"
+          ]
+        },
+        {
+          "title": "Nail Volley",
+          "body": [
+            "命令 · 伤害 6 · 冷却 7s · 血耗 18"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Makima",
+      "entries": [
+        {
+          "title": "Chain Pull",
+          "body": [
+            "键 1 · 伤害 6 · 冷却 4s · 血耗 10"
+          ]
+        },
+        {
+          "title": "Domination",
+          "body": [
+            "键 2 · 伤害 0 · 冷却 10s · 血耗 20"
+          ]
+        },
+        {
+          "title": "Sacrifice",
+          "body": [
+            "键 3 · 伤害 0 · 冷却 20s · 血耗 35"
+          ]
+        },
+        {
+          "title": "Rat Swarm",
+          "body": [
+            "键 4 · 伤害 7 · 冷却 7s · 血耗 22"
+          ]
+        },
+        {
+          "title": "Command",
+          "body": [
+            "命令 · 伤害 0 · 冷却 15s · 血耗 25"
+          ]
+        },
+        {
+          "title": "Sniping",
+          "body": [
+            "命令 · 伤害 30 · 冷却 20s · 血耗 50"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reze",
+      "entries": [
+        {
+          "title": "Bomb Kick",
+          "body": [
+            "键 1 · 伤害 12 · 冷却 2.5s · 血耗 12",
+            "结算：命中叠 1 层炸弹。"
+          ]
+        },
+        {
+          "title": "Bomb Punch",
+          "body": [
+            "键 2 · 伤害 9 · 冷却 2s · 血耗 8",
+            "结算：命中叠 1 层炸弹。"
+          ]
+        },
+        {
+          "title": "Detonate",
+          "body": [
+            "键 3 · 伤害 6 · 冷却 4.5s · 血耗 20",
+            "结算：按目标身上的炸弹层数加伤，并清空层数。"
+          ]
+        },
+        {
+          "title": "Air Burst",
+          "body": [
+            "键 4 · 伤害 14 · 冷却 6s · 血耗 22"
+          ]
+        },
+        {
+          "title": "Bomb Volley",
+          "body": [
+            "命令 · 伤害 8 · 冷却 4s · 血耗 16",
+            "结算：命中叠 1 层炸弹。"
+          ]
+        },
+        {
+          "title": "Regeneration",
+          "body": [
+            "命令 · 伤害 0 · 冷却 14s · 血耗 0"
+          ]
+        },
+        {
+          "title": "Self Destruct",
+          "body": [
+            "命令 · 伤害 30 · 冷却 25s · 血耗 45",
+            "结算：按目标身上的炸弹层数加伤，并清空层数。"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Contracts",
+      "entries": [
+        {
+          "title": "Fox",
+          "body": [
+            "Costs are permanent.",
+            "See the in-game tooltip for numbers."
+          ]
+        },
+        {
+          "title": "Curse",
+          "body": [
+            "Costs are permanent.",
+            "See the in-game tooltip for numbers."
+          ]
+        },
+        {
+          "title": "Future",
+          "body": [
+            "Costs are permanent.",
+            "See the in-game tooltip for numbers."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Boss",
+      "entries": [
+        {
+          "title": "Katana Man",
+          "body": [
+            "Read the telegraph, dodge sideways, punish the recovery."
+          ]
+        },
+        {
+          "title": "Gun Devil",
+          "body": [
+            "Read the telegraph, dodge sideways, punish the recovery."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "entries": [
+        {
+          "title": "Devil Hunter",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        },
+        {
+          "title": "Chainsaw",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        },
+        {
+          "title": "Hero of Hell",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        },
+        {
+          "title": "Blood Fiend",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        },
+        {
+          "title": "Aki",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        },
+        {
+          "title": "Control Devil",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        },
+        {
+          "title": "Bomb Hybrid",
+          "body": [
+            "Form specific text is Chinese-only for now."
+          ]
+        }
+      ]
+    }
+  ]
+}

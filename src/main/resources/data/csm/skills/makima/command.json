@@ -1,0 +1,44 @@
+{
+  "id": "csm:makima/command",
+  "slot": 99,
+  "special": "",
+  "note": "命令：范围定身",
+  "school": "makima",
+  "tier": 3,
+  "cost": {
+    "energy": 25,
+    "cooldown": 300
+  },
+  "cast": {
+    "windup": 12,
+    "active": 2,
+    "recovery": 16,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 8.0,
+    "effects": [
+      {
+        "id": "csm:stunned",
+        "duration": 100,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_command",
+    "particle": "csm:command_ring",
+    "sound": "csm:command",
+    "screen_shake": 0.3
+  },
+  "requires": {
+    "level": 6,
+    "flag": "csm:form_control"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "csm:reze/bomb_kick",
+  "slot": 0,
+  "special": "prime",
+  "note": "爆炸踢：叠 1 层炸弹",
+  "school": "reze",
+  "tier": 1,
+  "cost": {
+    "energy": 12,
+    "cooldown": 50
+  },
+  "cast": {
+    "windup": 6,
+    "active": 4,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 12,
+    "knockback": 0.6,
+    "damage_type": "csm:technique",
+    "range": 3.0,
+    "angle": 70,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_bomb_kick",
+    "particle": "csm:spark_burst",
+    "sound": "csm:bomb_kick",
+    "screen_shake": 0.3,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 1,
+    "flag": "csm:form_bomb"
+  }
+}

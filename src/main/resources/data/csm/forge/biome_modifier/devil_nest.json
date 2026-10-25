@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "csm:devil_nest"
+  ],
+  "step": "underground_decoration"
+}

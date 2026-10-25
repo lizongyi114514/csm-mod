@@ -1,0 +1,43 @@
+{
+  "id": "csm:power/blood_sword",
+  "slot": 2,
+  "special": "",
+  "note": "血剑：平A三连的基础段",
+  "school": "power",
+  "tier": 1,
+  "cost": {
+    "energy": 10,
+    "cooldown": 40
+  },
+  "cast": {
+    "windup": 4,
+    "active": 3,
+    "recovery": 8,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 11,
+    "knockback": 0.3,
+    "damage_type": "csm:technique",
+    "range": 2.8,
+    "angle": 70,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_blood_sword",
+    "particle": "csm:blood_arc",
+    "sound": "csm:sword_swing",
+    "screen_shake": 0.12,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 1,
+    "flag": "csm:form_blood"
+  }
+}

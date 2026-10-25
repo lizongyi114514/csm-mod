@@ -1,0 +1,50 @@
+{
+  "id": "csm:power/blood_spear",
+  "slot": 1,
+  "special": "",
+  "note": "血矛：直线穿透",
+  "school": "power",
+  "tier": 2,
+  "cost": {
+    "energy": 18,
+    "cooldown": 80
+  },
+  "cast": {
+    "windup": 6,
+    "active": 3,
+    "recovery": 14,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 16,
+    "knockback": 0.5,
+    "damage_type": "csm:technique",
+    "range": 8.0,
+    "width": 1.0,
+    "effects": [
+      {
+        "id": "csm:bleeding",
+        "duration": 120,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_blood_spear",
+    "particle": "csm:blood_trail",
+    "sound": "csm:blood_spear",
+    "screen_shake": 0.25,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 2,
+    "flag": "csm:form_blood"
+  }
+}

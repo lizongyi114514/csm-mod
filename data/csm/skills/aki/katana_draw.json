@@ -1,0 +1,43 @@
+{
+  "id": "csm:aki/katana_draw",
+  "slot": 0,
+  "special": "",
+  "note": "拔刀：极短前摇",
+  "school": "aki",
+  "tier": 1,
+  "cost": {
+    "energy": 10,
+    "cooldown": 60
+  },
+  "cast": {
+    "windup": 4,
+    "active": 2,
+    "recovery": 10,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 15,
+    "knockback": 0.4,
+    "damage_type": "csm:technique",
+    "range": 5.0,
+    "width": 1.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_katana_draw",
+    "particle": "csm:slash_line",
+    "sound": "csm:katana_draw",
+    "screen_shake": 0.2,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 1,
+    "flag": "csm:form_hunter"
+  }
+}

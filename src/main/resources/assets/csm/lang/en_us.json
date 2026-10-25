@@ -1,0 +1,184 @@
+{
+  "csm.boss.katana.frenzy": [
+    "武士刀男：刀身开始发烫……",
+    "Katana Man: the blade is heating up..."
+  ],
+  "csm.codex.hint": [
+    "点击左侧分区 · 滚轮翻页 · Esc 关闭",
+    "Click a section · scroll · Esc to close"
+  ],
+  "csm.codex.title": [
+    "电锯人图鉴",
+    "Chainsaw Man Codex"
+  ],
+  "csm.contract.curse": [
+    "咒",
+    "Curse"
+  ],
+  "csm.contract.curse.backlash": [
+    "诅咒反噬：第 %s 层",
+    "Curse backlash: stack %s"
+  ],
+  "csm.contract.fox": [
+    "狐",
+    "Fox"
+  ],
+  "csm.contract.fox.paid": [
+    "狐狸咬下了一口（已用 %s/3，剩 %s 次）",
+    "The fox takes its bite (%s/3 used, %s left)"
+  ],
+  "csm.contract.fox.revoked": [
+    "狐之契约已作废",
+    "The fox contract is spent"
+  ],
+  "csm.contract.future": [
+    "未",
+    "Future"
+  ],
+  "csm.contract.future.paid": [
+    "未来被预支了一次（最大生命 %s）",
+    "A future was spent (max health %s)"
+  ],
+  "csm.contract.reset": [
+    "契约账本已重置",
+    "Contract ledger reset"
+  ],
+  "csm.contract.unavailable": [
+    "契约次数已用尽",
+    "This contract is spent"
+  ],
+  "csm.form.denji": "Chainsaw",
+  "csm.form.hunter": "Devil Hunter",
+  "csm.form.makima": "Control Devil",
+  "csm.form.pochita": "Hero of Hell",
+  "csm.form.power": "Blood Fiend",
+  "csm.form.reze": "Bomb Hybrid",
+  "csm.message.no_energy": [
+    "血液不足",
+    "Not enough blood"
+  ],
+  "csm.message.requirement": [
+    "条件不足：形态、等级或契约未满足",
+    "Requirements not met: form, level or contract"
+  ],
+  "death.attack.csm.technique": [
+    "%1$s 被锯成了两半",
+    "%1$s was cut in half"
+  ],
+  "entity.csm.gun_devil": [
+    "枪之恶魔",
+    "Gun Devil"
+  ],
+  "entity.csm.katana_man": [
+    "武士刀男",
+    "Katana Man"
+  ],
+  "item.csm.chainsaw": [
+    "电锯",
+    "Chainsaw"
+  ],
+  "itemGroup.csm": [
+    "电锯人",
+    "Chainsaw Man"
+  ],
+  "key.csm": [
+    "电锯人",
+    "Chainsaw Man"
+  ],
+  "key.csm.codex": [
+    "图鉴",
+    "Codex"
+  ],
+  "key.csm.form": [
+    "变身 / 解除",
+    "Transform / Revert"
+  ],
+  "key.csm.skill1": [
+    "技能 1",
+    "Skill 1"
+  ],
+  "key.csm.skill2": [
+    "技能 2",
+    "Skill 2"
+  ],
+  "key.csm.skill3": [
+    "技能 3",
+    "Skill 3"
+  ],
+  "key.csm.skill4": [
+    "技能 4",
+    "Skill 4"
+  ],
+  "skill.csm.aki.curse_nail": "Curse Nail",
+  "skill.csm.aki.fox_contract": "Fox Contract",
+  "skill.csm.aki.future_sight": "Future Sight",
+  "skill.csm.aki.katana_combo": "Triple Slash",
+  "skill.csm.aki.katana_draw": "Iai Draw",
+  "skill.csm.aki.nail_volley": "Nail Volley",
+  "skill.csm.denji.blood_guzzle": "Blood Guzzle",
+  "skill.csm.denji.chainsaw_rush": "Chainsaw Rush",
+  "skill.csm.denji.double_saw": "Double Saw",
+  "skill.csm.denji.guts_finisher": "Guts Finisher",
+  "skill.csm.denji.head_saw_lunge": "Head Saw Lunge",
+  "skill.csm.denji.overdrive": "Overdrive",
+  "skill.csm.denji.saw_throw": "Saw Throw",
+  "skill.csm.denji.saw_uppercut": "Saw Uppercut",
+  "skill.csm.makima.chain_pull": "Chain Pull",
+  "skill.csm.makima.command": "Command",
+  "skill.csm.makima.dominate": "Domination",
+  "skill.csm.makima.rat_swarm": "Rat Swarm",
+  "skill.csm.makima.sacrifice": "Sacrifice",
+  "skill.csm.makima.snipe": "Sniping",
+  "skill.csm.pochita.concept_erase": "Concept Erasure",
+  "skill.csm.pochita.engine_roar": "Engine Roar",
+  "skill.csm.pochita.four_arm_flurry": "Four-Arm Flurry",
+  "skill.csm.pochita.hell_hero_dash": "Hell Hero Dash",
+  "skill.csm.power.blood_hammer": "Blood Hammer",
+  "skill.csm.power.blood_rain": "Blood Rain",
+  "skill.csm.power.blood_regenerate": "Blood Regeneration",
+  "skill.csm.power.blood_shield": "Blood Shield",
+  "skill.csm.power.blood_spear": "Blood Spear",
+  "skill.csm.power.blood_sword": "Blood Sword",
+  "skill.csm.reze.air_burst": "Air Burst",
+  "skill.csm.reze.bomb_kick": "Bomb Kick",
+  "skill.csm.reze.bomb_punch": "Bomb Punch",
+  "skill.csm.reze.bomb_volley": "Bomb Volley",
+  "skill.csm.reze.detonate": "Detonate",
+  "skill.csm.reze.regenerate": "Regeneration",
+  "skill.csm.reze.self_destruct": "Self Destruct",
+  "subtitles.csm.air_burst": "Air Burst",
+  "subtitles.csm.blood_hammer": "Blood Hammer",
+  "subtitles.csm.blood_spear": "Blood Spear",
+  "subtitles.csm.bomb_kick": "Bomb Kick",
+  "subtitles.csm.bomb_punch": "Bomb Punch",
+  "subtitles.csm.bomb_throw": "Bomb Volley",
+  "subtitles.csm.chain_rattle": "Chain Pull",
+  "subtitles.csm.chainsaw_rev": "Chainsaw Rush",
+  "subtitles.csm.command": "Command",
+  "subtitles.csm.detonate": "Detonate",
+  "subtitles.csm.dominate": "Domination",
+  "subtitles.csm.engine_overdrive": "Overdrive",
+  "subtitles.csm.engine_roar": "Head Saw Lunge",
+  "subtitles.csm.erase": "Concept Erasure",
+  "subtitles.csm.finisher": "Guts Finisher",
+  "subtitles.csm.foresight": "Future Sight",
+  "subtitles.csm.four_saw": "Four-Arm Flurry",
+  "subtitles.csm.fox_howl": "Fox Contract",
+  "subtitles.csm.guzzle": "Blood Guzzle",
+  "subtitles.csm.heal": "Blood Regeneration",
+  "subtitles.csm.hero_rev": "Hell Hero Dash",
+  "subtitles.csm.katana_draw": "Iai Draw",
+  "subtitles.csm.katana_swing": "Triple Slash",
+  "subtitles.csm.nail_hit": "Curse Nail",
+  "subtitles.csm.nail_volley": "Nail Volley",
+  "subtitles.csm.rain": "Blood Rain",
+  "subtitles.csm.rats": "Rat Swarm",
+  "subtitles.csm.roar": "Engine Roar",
+  "subtitles.csm.sacrifice": "Sacrifice",
+  "subtitles.csm.saw_hit": "Double Saw",
+  "subtitles.csm.saw_throw": "Saw Throw",
+  "subtitles.csm.self_destruct": "Self Destruct",
+  "subtitles.csm.shield_up": "Blood Shield",
+  "subtitles.csm.snipe": "Sniping",
+  "subtitles.csm.sword_swing": "Blood Sword"
+}

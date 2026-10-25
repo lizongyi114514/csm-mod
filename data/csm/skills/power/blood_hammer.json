@@ -1,0 +1,43 @@
+{
+  "id": "csm:power/blood_hammer",
+  "slot": 0,
+  "special": "",
+  "note": "血锤：重击，破防",
+  "school": "power",
+  "tier": 2,
+  "cost": {
+    "energy": 25,
+    "cooldown": 100
+  },
+  "cast": {
+    "windup": 12,
+    "active": 3,
+    "recovery": 20,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "cone",
+    "damage": 22,
+    "knockback": 1.2,
+    "damage_type": "csm:technique",
+    "range": 3.0,
+    "angle": 90,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_blood_hammer",
+    "particle": "csm:blood_splash",
+    "sound": "csm:blood_hammer",
+    "screen_shake": 0.45,
+    "trail": {
+      "step": 0.4,
+      "count": 24
+    }
+  },
+  "requires": {
+    "level": 3,
+    "flag": "csm:form_blood"
+  }
+}

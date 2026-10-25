@@ -1,0 +1,43 @@
+{
+  "id": "csm:denji/blood_guzzle",
+  "slot": 99,
+  "special": "",
+  "note": "吸血再生：喝血回血，消耗血槽",
+  "school": "denji",
+  "tier": 2,
+  "cost": {
+    "energy": 0,
+    "cooldown": 300
+  },
+  "cast": {
+    "windup": 20,
+    "active": 1,
+    "recovery": 20,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 0.5,
+    "effects": [
+      {
+        "id": "csm:blood_regeneration",
+        "duration": 120,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_drink",
+    "particle": "csm:blood_mist",
+    "sound": "csm:guzzle"
+  },
+  "requires": {
+    "level": 5,
+    "flag": "csm:form_chainsaw"
+  }
+}

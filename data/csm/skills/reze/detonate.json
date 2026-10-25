@@ -1,0 +1,38 @@
+{
+  "id": "csm:reze/detonate",
+  "slot": 2,
+  "special": "detonate",
+  "note": "引爆：每层 +5 伤害",
+  "school": "reze",
+  "tier": 2,
+  "cost": {
+    "energy": 20,
+    "cooldown": 90
+  },
+  "cast": {
+    "windup": 8,
+    "active": 2,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 6,
+    "knockback": 0.4,
+    "damage_type": "csm:technique",
+    "range": 6.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_detonate",
+    "particle": "csm:explosion_ring",
+    "sound": "csm:detonate",
+    "screen_shake": 0.6
+  },
+  "requires": {
+    "level": 4,
+    "flag": "csm:form_bomb"
+  }
+}

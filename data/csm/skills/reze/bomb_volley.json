@@ -1,0 +1,39 @@
+{
+  "id": "csm:reze/bomb_volley",
+  "slot": 99,
+  "special": "prime",
+  "note": "投掷炸弹：远程叠层",
+  "school": "reze",
+  "tier": 2,
+  "cost": {
+    "energy": 16,
+    "cooldown": 80
+  },
+  "cast": {
+    "windup": 7,
+    "active": 3,
+    "recovery": 12,
+    "move_lock": 0.6,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "ray",
+    "damage": 8,
+    "knockback": 0.3,
+    "damage_type": "csm:technique",
+    "range": 12.0,
+    "width": 1.0,
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_bomb_volley",
+    "particle": "csm:grenade_trail",
+    "sound": "csm:bomb_throw",
+    "screen_shake": 0.25
+  },
+  "requires": {
+    "level": 3,
+    "flag": "csm:form_bomb"
+  }
+}

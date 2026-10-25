@@ -1,0 +1,43 @@
+{
+  "id": "csm:power/blood_regenerate",
+  "slot": 99,
+  "special": "",
+  "note": "血再生：把血槽转成生命",
+  "school": "power",
+  "tier": 2,
+  "cost": {
+    "energy": 0,
+    "cooldown": 280
+  },
+  "cast": {
+    "windup": 18,
+    "active": 1,
+    "recovery": 18,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 0,
+    "knockback": 0,
+    "damage_type": "csm:technique",
+    "range": 0.5,
+    "effects": [
+      {
+        "id": "csm:blood_regeneration",
+        "duration": 100,
+        "amplifier": 0
+      }
+    ]
+  },
+  "visual": {
+    "animation_player": "atk_blood_heal",
+    "particle": "csm:red_mist",
+    "sound": "csm:heal"
+  },
+  "requires": {
+    "level": 3,
+    "flag": "csm:form_blood"
+  }
+}

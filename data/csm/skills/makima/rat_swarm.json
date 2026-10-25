@@ -1,0 +1,45 @@
+{
+  "id": "csm:makima/rat_swarm",
+  "slot": 3,
+  "special": "",
+  "note": "鼠群：范围持续伤害",
+  "school": "makima",
+  "tier": 2,
+  "cost": {
+    "energy": 22,
+    "cooldown": 140
+  },
+  "cast": {
+    "windup": 10,
+    "active": 4,
+    "recovery": 16,
+    "move_lock": 0.35,
+    "invulnerable": false,
+    "interruptible": true
+  },
+  "hit": {
+    "shape": "sphere",
+    "damage": 7,
+    "knockback": 0.1,
+    "damage_type": "csm:technique",
+    "range": 6.0,
+    "effects": [
+      {
+        "id": "csm:bleeding",
+        "duration": 80,
+        "amplifier": 0
+      }
+    ],
+    "once_per_target": true
+  },
+  "visual": {
+    "animation_player": "atk_rats",
+    "particle": "csm:rat_swarm",
+    "sound": "csm:rats",
+    "screen_shake": 0.12
+  },
+  "requires": {
+    "level": 5,
+    "flag": "csm:form_control"
+  }
+}
