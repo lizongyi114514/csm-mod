@@ -6,7 +6,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class FutureDevilRenderer extends GeoEntityRenderer<FutureDevilEntity> {
 
-    public FutureDevilEntityRenderer(EntityRendererProvider.Context context) {
+    public FutureDevilRenderer(EntityRendererProvider.Context context) {
         super(context, new FutureDevilGeoModel());
         this.shadowRadius = 0.7F;
     }

@@ -6,7 +6,7 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 public class FoxDevilRenderer extends GeoEntityRenderer<FoxDevilEntity> {
 
-    public FoxDevilEntityRenderer(EntityRendererProvider.Context context) {
+    public FoxDevilRenderer(EntityRendererProvider.Context context) {
         super(context, new FoxDevilGeoModel());
         this.shadowRadius = 1.2F;
     }
