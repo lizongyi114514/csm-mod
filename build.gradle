@@ -1,4 +1,4 @@
-﻿plugins {
+plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
@@ -45,7 +45,6 @@ minecraft {
 
 repositories {
     // 离线仓库：Forge userdev / universal / mcp_config（下载太慢，直接走本地）
-    maven { url = uri('file:///C:/Users/lizon/Documents/deepseek-harness/default-workspace/repo') }
     maven { url = 'https://maven.minecraftforge.net/' }
     mavenCentral()
 }
