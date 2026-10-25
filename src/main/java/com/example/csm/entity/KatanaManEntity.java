@@ -155,8 +155,8 @@ public class KatanaManEntity extends Monster implements GeoEntity {
             server.sendParticles(ParticleTypes.SWEEP_ATTACK, getX(), getY() + 1.0D, getZ(), 8, 1.0D, 0.6D, 1.0D, 0.05D);
         }
         var target = getTarget();
-        if (target != null) {
-            target.displayClientMessage(net.minecraft.network.chat.Component.translatable("csm.boss.katana.frenzy"), true);
+        if (target instanceof Player player) {
+            player.displayClientMessage(net.minecraft.network.chat.Component.translatable("csm.boss.katana.frenzy"), true);
         }
     }
 

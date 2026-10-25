@@ -6,7 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.RandomizableContainer;
+import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.BaseSpawner;
@@ -101,7 +101,7 @@ public class DevilNestFeature extends Feature<NoneFeatureConfiguration> {
         BlockPos chestPos = origin.offset(0, 0, 2);
         level.setBlock(chestPos, Blocks.CHEST.defaultBlockState().setValue(
                 net.minecraft.world.level.block.ChestBlock.FACING, Direction.SOUTH), 2);
-        if (level.getBlockEntity(chestPos) instanceof RandomizableContainer container) {
+        if (level.getBlockEntity(chestPos) instanceof RandomizableContainerBlockEntity container) {
             container.setLootTable(LOOT, random.nextLong());
         }
 

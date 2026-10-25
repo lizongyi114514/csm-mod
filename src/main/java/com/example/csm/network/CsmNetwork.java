@@ -31,25 +31,25 @@ public final class CsmNetwork {
         CHANNEL.messageBuilder(CastSkillPacket.class, id++, NetworkDirection.PLAY_TO_SERVER)
                 .encoder(CastSkillPacket::encode)
                 .decoder(CastSkillPacket::new)
-                .consumer(CastSkillPacket::handle)
+                .consumerMainThread(CastSkillPacket::handle)
                 .add();
 
         CHANNEL.messageBuilder(FormTogglePacket.class, id++, NetworkDirection.PLAY_TO_SERVER)
                 .encoder(FormTogglePacket::encode)
                 .decoder(FormTogglePacket::new)
-                .consumer(FormTogglePacket::handle)
+                .consumerMainThread(FormTogglePacket::handle)
                 .add();
 
         CHANNEL.messageBuilder(SkillStatePacket.class, id++, NetworkDirection.PLAY_TO_CLIENT)
                 .encoder(SkillStatePacket::encode)
                 .decoder(SkillStatePacket::new)
-                .consumer(SkillStatePacket::handle)
+                .consumerMainThread(SkillStatePacket::handle)
                 .add();
 
         CHANNEL.messageBuilder(PlayAnimPacket.class, id++, NetworkDirection.PLAY_TO_CLIENT)
                 .encoder(PlayAnimPacket::encode)
                 .decoder(PlayAnimPacket::new)
-                .consumer(PlayAnimPacket::handle)
+                .consumerMainThread(PlayAnimPacket::handle)
                 .add();
 
         Csm.LOGGER.debug("[CSM] 注册 {} 个网络包", id);

@@ -13,7 +13,7 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.util.thread.DistExecutor;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 import net.minecraftforge.api.distmarker.Dist;
 import org.slf4j.LoggerFactory;
@@ -36,7 +36,9 @@ public final class Csm {
         CsmFeatures.FEATURES.register(modBus);
         CsmNetwork.register();
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CsmConfig.SPEC);
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> CsmClientConfig::register);
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            CsmClientConfig.register();
+        }
         LOGGER.info("[CSM] Chainsaw Man Mod 初始化完成");
     }
 }

@@ -3,13 +3,10 @@ package com.example.csm.client;
 import com.example.csm.Csm;
 import com.example.csm.registry.CsmEntities;
 import com.example.csm.client.particle.CsmSparkParticle;
-import com.example.csm.registry.CsmItems;
 import com.example.csm.registry.CsmParticles;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
-import net.minecraft.client.resources.PlayerSkin;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.client.event.RegisterClientExtensionsEvent;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -31,10 +28,6 @@ public final class CsmClientSetup {
                 sprites -> CsmSparkParticle.provider(sprites, 1.00F, 0.55F, 0.30F));
     }
 
-    @SubscribeEvent
-    public static void registerItemRenderers(RegisterClientExtensionsEvent event) {
-        event.registerItem(new ChainsawItemRenderer(), CsmItems.CHAINSAW.get());
-    }
 
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
@@ -44,7 +37,7 @@ public final class CsmClientSetup {
 
     @SubscribeEvent
     public static void addPlayerLayers(EntityRenderersEvent.AddLayers event) {
-        for (PlayerSkin skin : event.getSkins()) {
+        for (var skin : event.getSkins()) {
             PlayerRenderer renderer = event.getSkin(skin);
             if (renderer != null) {
                 renderer.addLayer(new ChainsawFormLayer(renderer));
