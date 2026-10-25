@@ -20,6 +20,8 @@
   "csm.message.no_energy": "Not enough blood",
   "csm.message.requirement": "Requirements not met: form, level or contract",
   "death.attack.csm.technique": "%1$s was cut in half",
+  "entity.csm.fox_devil": "Fox Devil",
+  "entity.csm.future_devil": "Future Devil",
   "entity.csm.gun_devil": "Gun Devil",
   "entity.csm.katana_man": "Katana Man",
   "item.csm.chainsaw": "Chainsaw",

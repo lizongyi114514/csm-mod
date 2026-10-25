@@ -1,6 +1,8 @@
 package com.example.csm.registry;
 
 import com.example.csm.Csm;
+import com.example.csm.entity.FoxDevilEntity;
+import com.example.csm.entity.FutureDevilEntity;
 import com.example.csm.entity.GunDevilEntity;
 import com.example.csm.entity.KatanaManEntity;
 import net.minecraft.world.entity.EntityType;
@@ -25,6 +27,18 @@ public final class CsmEntities {
                     .sized(1.4F, 3.6F)
                     .clientTrackingRange(12)
                     .build(Csm.MODID + ":gun_devil"));
+
+    public static final RegistryObject<EntityType<FoxDevilEntity>> FOX_DEVIL = ENTITIES.register("fox_devil",
+            () -> EntityType.Builder.of(FoxDevilEntity::new, MobCategory.MONSTER)
+                    .sized(2.6F, 2.6F)
+                    .clientTrackingRange(12)
+                    .build(Csm.MODID + ":fox_devil"));
+
+    public static final RegistryObject<EntityType<FutureDevilEntity>> FUTURE_DEVIL = ENTITIES.register("future_devil",
+            () -> EntityType.Builder.of(FutureDevilEntity::new, MobCategory.MONSTER)
+                    .sized(1.2F, 2.2F)
+                    .clientTrackingRange(10)
+                    .build(Csm.MODID + ":future_devil"));
 
     private CsmEntities() {
     }

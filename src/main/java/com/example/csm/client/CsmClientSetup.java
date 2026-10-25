@@ -33,6 +33,8 @@ public final class CsmClientSetup {
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(CsmEntities.KATANA_MAN.get(), KatanaManRenderer::new);
         event.registerEntityRenderer(CsmEntities.GUN_DEVIL.get(), GunDevilRenderer::new);
+        event.registerEntityRenderer(CsmEntities.FOX_DEVIL.get(), FoxDevilRenderer::new);
+        event.registerEntityRenderer(CsmEntities.FUTURE_DEVIL.get(), FutureDevilRenderer::new);
     }
 
     @SubscribeEvent

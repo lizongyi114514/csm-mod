@@ -2,6 +2,8 @@ package com.example.csm.skill;
 
 import com.example.csm.config.CsmConfig;
 import com.example.csm.contract.Contract;
+import com.example.csm.entity.FoxDevilEntity;
+import com.example.csm.entity.FutureDevilEntity;
 import com.example.csm.contract.ContractManager;
 import com.example.csm.form.FormManager;
 import com.example.csm.network.PlayAnimPacket;
@@ -64,6 +66,12 @@ public final class SkillEngine {
         PlayAnimPacket.send(player, definition.visual().animation());
         if (contract != null) {
             ContractManager.use(player, contract);
+        }
+        String path = definition.id().getPath();
+        if (path.equals("aki/fox_contract")) {
+            FoxDevilEntity.summon(player, 200);
+        } else if (path.equals("aki/future_sight")) {
+            FutureDevilEntity.summon(player, 400);
         }
         SkillStatePacket.send(player);
         return true;

@@ -120,6 +120,8 @@ BASE = {
     "csm.codex.title": ("电锯人图鉴", "Chainsaw Man Codex"),
     "csm.codex.hint": ("点击左侧分区 · 滚轮翻页 · Esc 关闭", "Click a section · scroll · Esc to close"),
     "entity.csm.gun_devil": ("枪之恶魔", "Gun Devil"),
+    "entity.csm.fox_devil": ("狐狸恶魔", "Fox Devil"),
+    "entity.csm.future_devil": ("未来恶魔", "Future Devil"),
     "csm.boss.katana.frenzy": ("武士刀男：刀身开始发烫……", "Katana Man: the blade is heating up..."),
     "itemGroup.csm": ("电锯人", "Chainsaw Man"),
 }

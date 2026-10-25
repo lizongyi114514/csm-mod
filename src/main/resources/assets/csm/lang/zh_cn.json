@@ -20,6 +20,8 @@
   "csm.message.no_energy": "血液不足",
   "csm.message.requirement": "条件不足：形态、等级或契约未满足",
   "death.attack.csm.technique": "%1$s 被锯成了两半",
+  "entity.csm.fox_devil": "狐狸恶魔",
+  "entity.csm.future_devil": "未来恶魔",
   "entity.csm.gun_devil": "枪之恶魔",
   "entity.csm.katana_man": "武士刀男",
   "item.csm.chainsaw": "电锯",

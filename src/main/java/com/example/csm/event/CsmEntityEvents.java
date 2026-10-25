@@ -1,6 +1,8 @@
 package com.example.csm.event;
 
 import com.example.csm.Csm;
+import com.example.csm.entity.FoxDevilEntity;
+import com.example.csm.entity.FutureDevilEntity;
 import com.example.csm.entity.GunDevilEntity;
 import com.example.csm.entity.KatanaManEntity;
 import com.example.csm.registry.CsmEntities;
@@ -18,5 +20,7 @@ public final class CsmEntityEvents {
     public static void onEntityAttributes(EntityAttributeCreationEvent event) {
         event.put(CsmEntities.KATANA_MAN.get(), KatanaManEntity.createAttributes().build());
         event.put(CsmEntities.GUN_DEVIL.get(), GunDevilEntity.createAttributes().build());
+        event.put(CsmEntities.FOX_DEVIL.get(), FoxDevilEntity.createAttributes().build());
+        event.put(CsmEntities.FUTURE_DEVIL.get(), FutureDevilEntity.createAttributes().build());
     }
 }
