@@ -5,7 +5,7 @@ import com.example.csm.entity.FutureDevilEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
-public class FutureDevilEntityGeoModel extends GeoModel<FutureDevilEntity> {
+public class FutureDevilGeoModel extends GeoModel<FutureDevilEntity> {
 
     private static final ResourceLocation MODEL = new ResourceLocation(Csm.MODID, "geo/future_devil.geo.json");
     private static final ResourceLocation TEXTURE = new ResourceLocation(Csm.MODID, "textures/entity/future_devil.png");
