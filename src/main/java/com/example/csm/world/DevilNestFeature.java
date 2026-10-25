@@ -9,7 +9,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.BaseSpawner;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.entity.SpawnerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -94,8 +94,8 @@ public class DevilNestFeature extends Feature<NoneFeatureConfiguration> {
         }
 
         // 刷怪笼
-        spawner(level, origin.offset(-3, 0, -3), net.minecraft.world.entity.EntityType.ZOMBIE, random, 200, 400, 2);
-        spawner(level, origin.offset(3, 0, 3), CsmEntities.KATANA_MAN.get(), random, 1200, 2400, 1);
+        spawner(level, origin.offset(-3, 0, -3), net.minecraft.world.entity.EntityType.ZOMBIE, 200, 400, 2);
+        spawner(level, origin.offset(3, 0, 3), CsmEntities.KATANA_MAN.get(), 1200, 2400, 1);
 
         // 战利品箱
         BlockPos chestPos = origin.offset(0, 0, 2);
@@ -112,17 +112,18 @@ public class DevilNestFeature extends Feature<NoneFeatureConfiguration> {
     }
 
     private static void spawner(net.minecraft.world.level.LevelAccessor level, BlockPos pos,
-                                net.minecraft.world.entity.EntityType<?> type, RandomSource random,
+                                net.minecraft.world.entity.EntityType<?> type,
                                 int minDelay, int maxDelay, int count) {
         level.setBlock(pos, Blocks.SPAWNER.defaultBlockState(), 2);
         if (level.getBlockEntity(pos) instanceof SpawnerBlockEntity blockEntity) {
-            BaseSpawner spawner = blockEntity.getSpawner();
-            spawner.setEntityId(type, random);
-            spawner.setMinSpawnDelay(minDelay);
-            spawner.setMaxSpawnDelay(maxDelay);
-            spawner.setSpawnCount(count);
-            spawner.setRequiredPlayerRange(12);
-            spawner.setSpawnRange(4);
+            CompoundTag tag = new CompoundTag();
+            tag.putString("Entity", net.minecraft.world.entity.EntityType.getKey(type).toString());
+            tag.putShort("MinSpawnDelay", (short) minDelay);
+            tag.putShort("MaxSpawnDelay", (short) maxDelay);
+            tag.putShort("SpawnCount", (short) count);
+            tag.putShort("RequiredPlayerRange", (short) 12);
+            tag.putShort("SpawnRange", (short) 4);
+            blockEntity.load(tag);
         }
     }
 }
