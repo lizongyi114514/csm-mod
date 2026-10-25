@@ -10,6 +10,7 @@ import com.example.csm.network.SkillStatePacket;
 import com.example.csm.player.PlayerResources;
 import com.example.csm.registry.CsmEntities;
 import com.example.csm.registry.CsmItems;
+import com.example.csm.armor.ChainsawSetBonus;
 import com.example.csm.entity.PochitaEntity;
 import com.example.csm.skill.SkillDefinition;
 import com.example.csm.skill.SkillEngine;
@@ -49,6 +50,14 @@ public final class CommonEvents {
             event.accept(CsmItems.EYEPATCH);
             event.accept(CsmItems.POCHITA_HEART);
             event.accept(CsmItems.POCHITA_SPAWN_EGG);
+            event.accept(CsmItems.TOMATO);
+            event.accept(CsmItems.BREAD);
+            event.accept(CsmItems.STRONGEST_BREAD);
+            event.accept(CsmItems.CHAINSAW_HELMET);
+            event.accept(CsmItems.CHAINSAW_CHESTPLATE);
+            event.accept(CsmItems.CHAINSAW_LEGGINGS);
+            event.accept(CsmItems.CHAINSAW_BOOTS);
+            event.accept(CsmItems.TOMATO_SPAWN_EGG);
         }
     }
 
@@ -65,6 +74,7 @@ public final class CommonEvents {
         FormManager.tick(player);
         SkillEngine.tick(player);
         if (player.tickCount % 20 == 0) {
+            ChainsawSetBonus.tick(player);
             SkillStatePacket.send(player);
         }
     }

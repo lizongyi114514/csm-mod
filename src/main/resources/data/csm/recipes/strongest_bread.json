@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "csm:bread"
+    },
+    {
+      "item": "csm:tomato"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "csm:strongest_bread",
+    "count": 1
+  }
+}

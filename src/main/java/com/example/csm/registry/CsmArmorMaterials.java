@@ -51,6 +51,53 @@ public final class CsmArmorMaterials {
         }
     };
 
+    public static final ArmorMaterial CHAINSAW = new ArmorMaterial() {
+        @Override
+        public int getDurabilityForType(ArmorItem.Type type) {
+            return 24;
+        }
+
+        @Override
+        public int getDefenseForType(ArmorItem.Type type) {
+            return switch (type) {
+                case HELMET -> 3;
+                case CHESTPLATE -> 7;
+                case LEGGINGS -> 5;
+                case BOOTS -> 2;
+            };
+        }
+
+        @Override
+        public int getEnchantmentValue() {
+            return 12;
+        }
+
+        @Override
+        public SoundEvent getEquipSound() {
+            return SoundEvents.ARMOR_EQUIP_IRON;
+        }
+
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.of(net.minecraft.world.item.Items.IRON_INGOT);
+        }
+
+        @Override
+        public String getName() {
+            return "csm_chainsaw";
+        }
+
+        @Override
+        public float getToughness() {
+            return 1.5F;
+        }
+
+        @Override
+        public float getKnockbackResistance() {
+            return 0.05F;
+        }
+    };
+
     private CsmArmorMaterials() {
     }
 }

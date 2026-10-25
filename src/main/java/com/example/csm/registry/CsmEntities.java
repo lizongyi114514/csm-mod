@@ -5,6 +5,7 @@ import com.example.csm.entity.FoxDevilEntity;
 import com.example.csm.entity.FutureDevilEntity;
 import com.example.csm.entity.GunDevilEntity;
 import com.example.csm.entity.PochitaEntity;
+import com.example.csm.entity.TomatoDevilEntity;
 import com.example.csm.entity.KatanaManEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -46,6 +47,12 @@ public final class CsmEntities {
                     .sized(0.7F, 0.9F)
                     .clientTrackingRange(10)
                     .build(Csm.MODID + ":pochita"));
+
+    public static final RegistryObject<EntityType<TomatoDevilEntity>> TOMATO_DEVIL = ENTITIES.register("tomato_devil",
+            () -> EntityType.Builder.of(TomatoDevilEntity::new, MobCategory.MONSTER)
+                    .sized(1.0F, 1.2F)
+                    .clientTrackingRange(10)
+                    .build(Csm.MODID + ":tomato_devil"));
 
     private CsmEntities() {
     }

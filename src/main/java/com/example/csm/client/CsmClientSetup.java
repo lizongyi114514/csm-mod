@@ -36,6 +36,7 @@ public final class CsmClientSetup {
         event.registerEntityRenderer(CsmEntities.FOX_DEVIL.get(), FoxDevilRenderer::new);
         event.registerEntityRenderer(CsmEntities.FUTURE_DEVIL.get(), FutureDevilRenderer::new);
         event.registerEntityRenderer(CsmEntities.POCHITA.get(), PochitaRenderer::new);
+        event.registerEntityRenderer(CsmEntities.TOMATO_DEVIL.get(), TomatoDevilRenderer::new);
     }
 
     @SubscribeEvent
