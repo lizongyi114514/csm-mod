@@ -1,22 +1,15 @@
 package com.example.csm.registry;
 
-import com.example.csm.Csm;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 
-/** 眼罩的护甲材质（只为能戴在头上，防御/耐久都很低）。 */
+/** 1.20.1 的 ArmorMaterial 只是普通接口，不需要注册。 */
 public final class CsmArmorMaterials {
 
-    public static final DeferredRegister<ArmorMaterial> MATERIALS =
-            DeferredRegister.create(ForgeRegistries.ARMOR_MATERIALS, Csm.MODID);
-
-    public static final RegistryObject<ArmorMaterial> EYEPATCH = MATERIALS.register("eyepatch", () -> new ArmorMaterial() {
+    public static final ArmorMaterial EYEPATCH = new ArmorMaterial() {
         @Override
         public int getDurabilityForType(ArmorItem.Type type) {
             return 55;
@@ -44,7 +37,7 @@ public final class CsmArmorMaterials {
 
         @Override
         public String getName() {
-            return "csm_eyepatch";
+            return csm_eyepatch;
         }
 
         @Override
@@ -56,7 +49,7 @@ public final class CsmArmorMaterials {
         public float getKnockbackResistance() {
             return 0.0F;
         }
-    });
+    };
 
     private CsmArmorMaterials() {
     }

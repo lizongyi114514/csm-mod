@@ -8,6 +8,6 @@ import net.minecraft.world.item.Item;
 public class EyepatchItem extends ArmorItem {
 
     public EyepatchItem() {
-        super(CsmArmorMaterials.EYEPATCH.get(), ArmorItem.Type.HELMET, new Item.Properties());
+        super(CsmArmorMaterials.EYEPATCH, ArmorItem.Type.HELMET, new Item.Properties());
     }
 }
