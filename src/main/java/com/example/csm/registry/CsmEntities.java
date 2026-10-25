@@ -4,6 +4,7 @@ import com.example.csm.Csm;
 import com.example.csm.entity.FoxDevilEntity;
 import com.example.csm.entity.FutureDevilEntity;
 import com.example.csm.entity.GunDevilEntity;
+import com.example.csm.entity.PochitaEntity;
 import com.example.csm.entity.KatanaManEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -39,6 +40,12 @@ public final class CsmEntities {
                     .sized(1.2F, 2.2F)
                     .clientTrackingRange(10)
                     .build(Csm.MODID + ":future_devil"));
+
+    public static final RegistryObject<EntityType<PochitaEntity>> POCHITA = ENTITIES.register("pochita",
+            () -> EntityType.Builder.of(PochitaEntity::new, MobCategory.CREATURE)
+                    .sized(0.7F, 0.9F)
+                    .clientTrackingRange(10)
+                    .build(Csm.MODID + ":pochita"));
 
     private CsmEntities() {
     }

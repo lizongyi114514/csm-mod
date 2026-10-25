@@ -4,6 +4,7 @@ import com.example.csm.Csm;
 import com.example.csm.entity.FoxDevilEntity;
 import com.example.csm.entity.FutureDevilEntity;
 import com.example.csm.entity.GunDevilEntity;
+import com.example.csm.entity.PochitaEntity;
 import com.example.csm.entity.KatanaManEntity;
 import com.example.csm.registry.CsmEntities;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -22,5 +23,6 @@ public final class CsmEntityEvents {
         event.put(CsmEntities.GUN_DEVIL.get(), GunDevilEntity.createAttributes().build());
         event.put(CsmEntities.FOX_DEVIL.get(), FoxDevilEntity.createAttributes().build());
         event.put(CsmEntities.FUTURE_DEVIL.get(), FutureDevilEntity.createAttributes().build());
+        event.put(CsmEntities.POCHITA.get(), PochitaEntity.createAttributes().build());
     }
 }

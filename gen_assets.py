@@ -123,6 +123,7 @@ BASE = {
     "csm.foresight.hud": ("预知 %s 秒｜预计受击 %s", "Foresight %ss | incoming ~%s"),
     "csm.foresight.safe": ("预知 %s 秒｜暂时安全", "Foresight %ss | clear"),
     "csm.foresight.threats": ("威胁 ×%s", "threats ×%s"),
+    "entity.csm.pochita": ("波奇塔", "Pochita"),
     "entity.csm.fox_devil": ("狐狸恶魔", "Fox Devil"),
     "entity.csm.future_devil": ("未来恶魔", "Future Devil"),
     "csm.boss.katana.frenzy": ("武士刀男：刀身开始发烫……", "Katana Man: the blade is heating up..."),

@@ -10,6 +10,7 @@ import com.example.csm.network.SkillStatePacket;
 import com.example.csm.player.PlayerResources;
 import com.example.csm.registry.CsmEntities;
 import com.example.csm.registry.CsmItems;
+import com.example.csm.entity.PochitaEntity;
 import com.example.csm.skill.SkillDefinition;
 import com.example.csm.skill.SkillEngine;
 import com.example.csm.skill.SkillManager;
@@ -155,6 +156,13 @@ public final class CommonEvents {
                                 })
                                 .executes(context -> summonBoss(context.getSource(),
                                         StringArgumentType.getString(context, "boss")))))
+                .then(Commands.literal("pochita").executes(context -> {
+                    ServerPlayer player = context.getSource().getPlayerOrException();
+                    PochitaEntity dog = PochitaEntity.summon(player);
+                    context.getSource().sendSuccess(() -> Component.literal(
+                            dog == null ? "召唤失败" : "波奇塔来了"), false);
+                    return dog == null ? 0 : 1;
+                }))
                 .then(Commands.literal("nest").executes(context -> {
                     ServerPlayer player = context.getSource().getPlayerOrException();
                     if (!(player.level() instanceof ServerLevel level)) {
