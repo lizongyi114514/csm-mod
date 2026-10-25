@@ -37,7 +37,7 @@ public final class CsmArmorMaterials {
 
         @Override
         public String getName() {
-            return csm_eyepatch;
+            return "csm_eyepatch";
         }
 
         @Override
